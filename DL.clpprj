@@ -1,0 +1,1459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="E:\xampp\htdocs\DL\DL.clpprj">
+	<settings><PM_URL><![CDATA[http://localhost:8080/DL/]]></PM_URL><PM_HOME_URL><![CDATA[http://localhost:8080/DL/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><codestructure>
+		<phptree>
+			<treenode node="AdminModel;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f1;1;2;96;;;;vpos;;v;;r;;d1,2;;b0,0;;m">
+				<treenode node="issueBook;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f9;9;3;53;;;;vpos;;v;;r;;d2,10;;b1,0;;mrequestId;;pBookId;;pUserId;;p">
+					<treenode node="availableCopies;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f4;34;20;34;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="BookId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f40;9;47;9;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="command;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f4;19;12;19;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="command_1;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f4;27;14;27;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="command_2;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f4;32;14;32;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="command_3;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f4;38;14;38;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="conn;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f3;11;8;11;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="dueDate;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f4;16;12;16;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="e;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f19;46;21;46;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="issueDate;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f4;15;14;15;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="requestId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f28;9;38;9;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="retVal;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f4;44;11;44;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="sql;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f4;18;8;18;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="trans;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f3;12;9;12;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="UserId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f49;9;56;9;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="returnBook;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f9;61;3;95;;;;vpos;;v;;r;;d2,62;;b1,0;;mBookId;;pUserId;;p">
+					<treenode node="availableCopies;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f4;77;20;77;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="BookId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f29;61;36;61;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="command;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f4;69;12;69;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="command_2;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f4;75;14;75;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="command_3;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f4;81;14;81;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="conn;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f3;63;8;63;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="e;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f19;89;21;89;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="retVal;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f4;87;11;87;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="sql;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f4;68;8;68;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="trans;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f3;64;9;64;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="UserId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php;f38;61;45;61;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="AdminModule;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\adminmodule.php;f0;2;1;47;;;;vpos;;vCWebModule;;c;;r;;d0,3;;b0,0;;m">
+				<treenode node="init;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\adminmodule.php;f8;7;2;26;;;;vpos;;v;;r;;d1,8;;b1,0;;m">
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\adminmodule.php;f2;13;7;13;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="defaultController;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\adminmodule.php;f8;4;26;4;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+				<treenode node="homeUrl;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\adminmodule.php;f8;5;16;5;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Author;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Author.php;f0;6;1;101;;E:\xampp\htdocs\DL\protected\modules\library\models\Author.php;f0;6;1;26;;;;vpos;;vCActiveRecord;;c;;r;;d0,7;;b0,0;;m">
+				<treenode node="attributeLabels;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Author.php;f11;71;5;83;;;;vpos;;varray;;r @return customized attribute labels (name=&gt;label);;d4,72;;b1,0;;m">
+				</treenode>
+				<treenode node="getAllAuthors;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Author.php;f8;96;2;100;;;;vpos;;v;;r;;d1,97;;b1,0;;m">
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Author.php;f2;98;15;98;;;;vposCActiveDataProvider;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="model;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Author.php;f18;13;5;16;;E:\xampp\htdocs\DL\protected\modules\library\models\Author.php;f18;13;5;16;;;;vpos;;vAuthors;;r Returns the static model of the specified AR class. @param active record class name. @return the static model class;;d4,14;;b1,5;;mstring $className;;p">
+					<treenode node="className;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Author.php;f33;13;43;13;;E:\xampp\htdocs\DL\protected\modules\library\models\Author.php;f33;13;43;13;;;;vposAuthors;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="relations;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Author.php;f11;57;5;66;;;;vpos;;varray;;r @return relational rules.;;d4,58;;b1,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Author.php;f11;29;5;52;;;;vpos;;varray;;r @return validation rules for model attributes.;;d4,30;;b1,0;;m">
+				</treenode>
+				<treenode node="search;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Author.php;f11;89;5;94;;;;vpos;;vCActiveDataProvider;;r Retrieves a list of models based on the current search /filter conditions. @return the data provider that can return the models based on the search /filter conditions.;;d4,90;;b1,0;;m">
+					<treenode node="criteria;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Author.php;f8;91;17;91;;;;vposCDbCriteria;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Author.php;f41;92;46;92;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="tableName;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Author.php;f11;21;5;24;;E:\xampp\htdocs\DL\protected\modules\library\models\Author.php;f11;21;5;24;;;;vpos;;vstring;;r @return the associated database table name;;d4,22;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="AuthorController;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f1;1;2;135;;;;vpos;;vController;;c;;r;;d1,2;;b0,0;;m">
+				<treenode node="accessRules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f9;5;3;12;;;;vpos;;v;;r;;d2,6;;b1,0;;m">
+				</treenode>
+				<treenode node="actionCreateAuthor;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f12;29;6;43;;;;vpos;;v;;r;;d5,30;;b1,0;;m">
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f18;35;24;35;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f9;31;15;31;;;;vposAuthor;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f9;33;14;33;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionDeleteAuthor;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f9;60;3;101;;;;vpos;;v;;r;;d2,61;;b1,0;;mid;;p">
+					<treenode node="_GET;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f20;85;25;85;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f27;88;33;88;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="ex;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f23;77;26;77;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f37;60;40;60;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="msg;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f6;69;10;69;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f15;66;20;66;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="type;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f6;68;11;68;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionError;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f9;125;3;134;;;;vpos;;v;;r;;d2,126;;b1,0;;m">
+					<treenode node="error;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f9;127;15;127;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f11;132;16;132;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionIndex;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f9;14;3;26;;;;vpos;;v;;r;;d2,15;;b1,0;;m">
+					<treenode node="authors;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f3;17;11;17;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f9;16;22;16;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="msg;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f4;21;8;21;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f9;25;14;25;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionUpdateAuthor;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f9;45;3;58;;;;vpos;;v;;r;;d2,46;;b1,0;;mid;;p">
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f15;50;21;50;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f37;45;40;45;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f3;47;9;47;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f12;47;17;47;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="filters;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f9;120;3;123;;;;vpos;;v;;r;;d2,121;;b1,0;;m">
+				</treenode>
+				<treenode node="getAllAuthors;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f9;111;3;118;;;;vpos;;v;;r;;d2,112;;b1,0;;m">
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f6;113;12;113;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="loadAuthorModel;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f9;103;3;109;;;;vpos;;v;;r;;d2,104;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f34;103;37;103;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f6;105;12;105;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="formId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php;f9;3;16;3;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Book;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f0;5;1;91;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f0;5;1;152;;;;vpos;;vCActiveRecord;;c;;r;;d0,6;;b0,0;;m">
+				<treenode node="attributeLabels;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f8;79;2;91;;;;vpos;;varray;;r @return customized attribute labels (name=&gt;label);;d1,80;;b1,0;;m">
+				</treenode>
+				<treenode node="checkAvailableCopies;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f8;55;2;59;;;;vpos;;v;;r;;d1,56;;b1,0;;mattribute;;pparams;;p">
+					<treenode node="attribute;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f38;26;48;26;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f38;55;48;55;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="params;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f50;26;57;26;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f50;55;57;55;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f6;28;11;28;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f6;57;11;57;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getAllBooks;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f8;50;2;54;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f8;111;2;115;;;;vpos;;v;;r;;d1,112;;b1,0;;m">
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f2;52;15;52;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f2;113;15;113;;;;vposCActiveDataProvider;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getBookNameById;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f8;79;2;90;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f8;140;2;151;;;;vpos;;v;;r;;d1,141;;b1,0;;mId;;p">
+					<treenode node="Id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f33;79;36;79;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f33;140;36;140;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="result;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f2;81;9;81;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f2;142;9;142;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getRequestedBooks;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f8;56;2;77;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f8;117;2;138;;;;vpos;;v;;r;;d1,118;;b1,0;;m">
+					<treenode node="bookIds;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f2;59;10;59;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f2;120;10;120;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="criteria;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f2;58;11;58;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f2;119;11;119;;;;vposCDbCriteria;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f3;69;16;69;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f3;130;16;130;;;;vposCActiveDataProvider;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="Ids;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f2;60;6;60;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f2;121;6;121;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="key;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f23;63;27;63;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f23;124;27;124;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f43;69;48;69;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f43;130;48;130;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="val;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f31;63;35;63;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f31;124;35;124;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="model;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f15;12;2;15;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f15;12;2;15;;;;vpos;;vBook;;r Returns the static model of the specified AR class. @param active record class name. @return the static model class;;d1,13;;b1,5;;mstring $className;;p">
+					<treenode node="className;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f30;12;40;12;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f30;12;40;12;;;;vposAuthors;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="relations;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f8;36;2;46;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f8;64;2;74;;;;vpos;;varray;;r @return relational rules.;;d1,65;;b1,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f8;28;2;53;;;;vpos;;varray;;r @return validation rules for model attributes.;;d1,29;;b1,0;;m">
+				</treenode>
+				<treenode node="search;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f8;97;2;109;;;;vpos;;vCActiveDataProvider;;r Retrieves a list of models based on the current search /filter conditions. @return the data provider that can return the models based on the search /filter conditions.;;d1,98;;b1,0;;m">
+					<treenode node="criteria;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f2;102;11;102;;;;vposCDbCriteria;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f30;104;35;104;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="tableName;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\Book.php;f8;20;2;23;;E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php;f8;20;2;23;;;;vpos;;vstring;;r @return the associated database table name;;d1,21;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="BookController;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f1;1;2;209;;;;vpos;;vController;;c;;r;;d1,2;;b0,0;;m">
+				<treenode node="accessRules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f9;4;3;11;;;;vpos;;v;;r;;d2,5;;b1,0;;m">
+				</treenode>
+				<treenode node="actionCreateBook;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f12;40;3;80;;;;vpos;;v;;r;;d5,41;;b1,0;;m">
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f19;71;25;71;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="auth;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f24;63;29;63;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="autharray;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f5;65;15;65;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="authors;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f3;46;11;46;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="cat;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f27;58;31;58;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="catarray;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f5;60;14;60;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="categories;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f3;45;14;45;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f9;42;15;42;;;;vposBook;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="pub;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f27;53;31;53;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="pubarray;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f5;55;14;55;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="publishers;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f3;44;14;44;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f17;44;22;44;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actiondeleteBook;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f9;126;3;174;;;;vpos;;v;;r;;d2,127;;b1,0;;mid;;p">
+					<treenode node="_GET;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f24;157;29;157;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f28;160;34;160;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="ex;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f25;150;28;150;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f35;126;38;126;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f4;130;10;130;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="msg;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f7;142;11;142;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f13;130;18;130;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="type;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f7;141;12;141;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionIndex;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f9;13;3;33;;;;vpos;;v;;r;;d2,14;;b1,0;;m">
+					<treenode node="books;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f3;22;9;22;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="canAddNewBook;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f4;17;18;17;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f9;21;22;21;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="msg;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f4;26;8;26;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f8;16;13;16;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionUpdateBook;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f12;82;6;124;;;;vpos;;v;;r;;d5,83;;b1,0;;mid;;p">
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f19;115;25;115;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="auth;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f24;108;29;108;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="autharray;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f5;110;15;110;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="authors;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f3;91;11;91;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="cat;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f27;103;31;103;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="catarray;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f5;105;14;105;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="categories;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f3;90;14;90;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f38;82;41;82;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f9;84;15;84;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="pub;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f27;98;31;98;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="pubarray;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f5;100;14;100;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="publishers;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f3;89;14;89;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f18;84;23;84;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="filters;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f9;35;3;38;;;;vpos;;v;;r;;d2,36;;b1,0;;m">
+				</treenode>
+				<treenode node="getAllAuthors;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f9;193;3;200;;;;vpos;;v;;r;;d2,194;;b1,0;;m">
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f9;195;15;195;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getAllCategories;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f9;202;3;208;;;;vpos;;v;;r;;d2,203;;b1,0;;m">
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f9;204;15;204;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getAllPublishers;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f9;184;3;191;;;;vpos;;v;;r;;d2,185;;b1,0;;m">
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f9;186;15;186;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="loadBookModel;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f12;176;6;182;;;;vpos;;v;;r;;d5,177;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f35;176;38;176;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f9;178;15;178;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="formId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php;f9;3;16;3;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CAdminUserIdentity;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\components\CAdminUserIdentity.php;f0;8;1;59;;;;vpos;;vCUserIdentity;;c;;r;;d0,9;;b0,0;;m">
+				<treenode node="authenticate;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\components\CAdminUserIdentity.php;f8;25;2;52;;;;vpos;;v;;r;;d1,26;;b1,0;;m">
+					<treenode node="hashedPwd;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\components\CAdminUserIdentity.php;f3;34;13;34;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\components\CAdminUserIdentity.php;f67;27;72;27;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="user;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\components\CAdminUserIdentity.php;f2;27;7;27;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getId;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\components\CAdminUserIdentity.php;f8;54;2;58;;;;vpos;;v;;r;;d1,55;;b1,0;;m">
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\components\CAdminUserIdentity.php;f9;56;14;56;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="hashUserPassword;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\components\CAdminUserIdentity.php;f9;14;2;23;;;;vpos;;v;;r;;d1,15;;b3,0;;mpwd;;p">
+					<treenode node="pwd;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\components\CAdminUserIdentity.php;f35;14;39;14;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="str;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\components\CAdminUserIdentity.php;f2;21;6;21;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="_id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\components\CAdminUserIdentity.php;f9;10;13;10;;;;vpos;;v;;r;;d-1,-1;;b3,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Category;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Category.php;f0;6;1;90;;E:\xampp\htdocs\DL\protected\modules\library\models\Category.php;f0;6;1;28;;;;vpos;;vCActiveRecord;;c;;r;;d0,7;;b0,0;;m">
+				<treenode node="attributeLabels;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Category.php;f11;61;5;67;;;;vpos;;varray;;r @return customized attribute labels (name=&gt;label);;d4,62;;b1,0;;m">
+				</treenode>
+				<treenode node="getAllCategories;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Category.php;f8;85;2;89;;;;vpos;;v;;r;;d1,86;;b1,0;;m">
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Category.php;f2;87;15;87;;;;vposCActiveDataProvider;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="model;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Category.php;f18;13;5;16;;E:\xampp\htdocs\DL\protected\modules\library\models\Category.php;f18;13;5;16;;;;vpos;;vCategories;;r Returns the static model of the specified AR class. @param active record class name. @return the static model class;;d4,14;;b1,5;;mstring $className;;p">
+					<treenode node="className;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Category.php;f33;13;43;13;;E:\xampp\htdocs\DL\protected\modules\library\models\Category.php;f33;13;43;13;;;;vposAuthors;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="relations;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Category.php;f11;47;5;56;;;;vpos;;varray;;r @return relational rules.;;d4,48;;b1,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Category.php;f11;29;5;42;;;;vpos;;varray;;r @return validation rules for model attributes.;;d4,30;;b1,0;;m">
+				</treenode>
+				<treenode node="search;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Category.php;f11;73;5;83;;;;vpos;;vCActiveDataProvider;;r Retrieves a list of models based on the current search /filter conditions. @return the data provider that can return the models based on the search /filter conditions.;;d4,74;;b1,0;;m">
+					<treenode node="criteria;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Category.php;f8;78;17;78;;;;vposCDbCriteria;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Category.php;f43;80;48;80;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="tableName;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Category.php;f11;21;5;24;;E:\xampp\htdocs\DL\protected\modules\library\models\Category.php;f11;21;5;24;;;;vpos;;vstring;;r @return the associated database table name;;d4,22;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CategoryController;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f1;1;2;122;;;;vpos;;vController;;c;;r;;d1,2;;b0,0;;m">
+				<treenode node="accessRules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f9;4;3;10;;;;vpos;;v;;r;;d2,5;;b1,0;;m">
+				</treenode>
+				<treenode node="actionCreateCategory;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f12;26;6;41;;;;vpos;;v;;r;;d5,27;;b1,0;;m">
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f18;33;24;33;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f9;28;15;28;;;;vposCategory;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f9;31;14;31;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actiondeleteCategory;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f9;58;3;99;;;;vpos;;v;;r;;d2,59;;b1,0;;mid;;p">
+					<treenode node="_GET;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f23;84;28;84;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f27;87;33;87;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="ex;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f24;76;27;76;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f39;58;42;58;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="msg;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f6;67;10;67;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f18;64;23;64;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="type;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f6;66;11;66;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionIndex;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f9;12;3;24;;;;vpos;;v;;r;;d2,13;;b1,0;;m">
+					<treenode node="categories;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f3;15;14;15;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f9;14;22;14;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="msg;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f4;19;8;19;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f9;23;14;23;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionUpdateCategory;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f9;43;3;56;;;;vpos;;v;;r;;d2,44;;b1,0;;mid;;p">
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f15;48;21;48;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f39;43;42;43;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f6;45;12;45;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f15;45;20;45;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="filters;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f9;118;3;121;;;;vpos;;v;;r;;d2,119;;b1,0;;m">
+				</treenode>
+				<treenode node="getAllCategories;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f9;109;3;116;;;;vpos;;v;;r;;d2,110;;b1,0;;m">
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f6;111;12;111;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="loadCategoryModel;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f9;101;3;107;;;;vpos;;v;;r;;d2,102;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f36;101;39;101;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f6;103;12;103;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="formId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php;f9;3;16;3;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CDLAuthManager;PHP:Class Name;E:\xampp\htdocs\DL\protected\components\CDLAuthManager.php;f0;1;1;14;;;;vpos;;vCPhpAuthManager;;c;;r;;d0,2;;b0,0;;m">
+				<treenode node="init;PHP:Function Name;E:\xampp\htdocs\DL\protected\components\CDLAuthManager.php;f11;3;5;13;;;;vpos;;v;;r;;d1,4;;b1,0;;m">
+					<treenode node="role;PHP:Var Name;E:\xampp\htdocs\DL\protected\components\CDLAuthManager.php;f3;10;8;10;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\components\CDLAuthManager.php;f3;11;8;11;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="CDLButtonColumn;PHP:Class Name;E:\xampp\htdocs\DL\protected\components\CDLButtonColumn.php;f1;1;2;33;;;;vpos;;vCButtonColumn;;c;;r;;d1,2;;b0,0;;m">
+				<treenode node="renderDataCellContent;PHP:Function Name;E:\xampp\htdocs\DL\protected\components\CDLButtonColumn.php;f12;3;3;32;;;;vpos;;v;;r;;d2,4;;b2,0;;mrow;;pdata;;p">
+					<treenode node="data;PHP:Var Name;E:\xampp\htdocs\DL\protected\components\CDLButtonColumn.php;f49;3;54;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="grid;PHP:Var Name;E:\xampp\htdocs\DL\protected\components\CDLButtonColumn.php;f3;5;8;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="row;PHP:Var Name;E:\xampp\htdocs\DL\protected\components\CDLButtonColumn.php;f43;3;47;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\components\CDLButtonColumn.php;f11;5;16;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="CDLUser;PHP:Class Name;E:\xampp\htdocs\DL\protected\components\CDLUser.php;f0;2;1;19;;;;vpos;;vCWebUser;;c;;r;;d0,3;;b0,0;;m">
+				<treenode node="init;PHP:Function Name;E:\xampp\htdocs\DL\protected\components\CDLUser.php;f8;4;2;17;;;;vpos;;v;;r;;d1,5;;b1,0;;m">
+					<treenode node="app;PHP:Var Name;E:\xampp\htdocs\DL\protected\components\CDLUser.php;f2;7;6;7;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="ctrl;PHP:Var Name;E:\xampp\htdocs\DL\protected\components\CDLUser.php;f2;8;7;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\components\CDLUser.php;f3;11;8;11;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="CLibraryUserIdentity;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\library\components\CLibraryUserIdentity.php;f0;2;1;52;;;;vpos;;vCUserIdentity;;c;;r;;d0,3;;b0,0;;m">
+				<treenode node="authenticate;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\components\CLibraryUserIdentity.php;f8;18;2;45;;;;vpos;;v;;r;;d1,19;;b1,0;;m">
+				</treenode>
+				<treenode node="getId;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\components\CLibraryUserIdentity.php;f8;47;2;51;;;;vpos;;v;;r;;d1,48;;b1,0;;m">
+				</treenode>
+				<treenode node="hashUserPassword;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\components\CLibraryUserIdentity.php;f9;7;2;16;;;;vpos;;v;;r;;d1,8;;b3,0;;mpwd;;p">
+					<treenode node="pwd;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\components\CLibraryUserIdentity.php;f35;7;39;7;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="_id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\components\CLibraryUserIdentity.php;f9;4;13;4;;;;vpos;;v;;r;;d-1,-1;;b3,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="ContactForm;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\library\models\ContactForm.php;f0;2;1;36;;;;vpos;;vCFormModel;;c;;r;;d0,3;;b0,0;;m">
+				<treenode node="attributeLabels;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\ContactForm.php;f8;30;2;35;;;;vpos;;v;;r;;d1,31;;b1,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\ContactForm.php;f8;13;2;23;;;;vpos;;v;;r;;d1,14;;b1,0;;m">
+				</treenode>
+				<treenode node="body;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\ContactForm.php;f8;7;13;7;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+				<treenode node="email;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\ContactForm.php;f8;5;14;5;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+				<treenode node="name;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\ContactForm.php;f8;4;13;4;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+				<treenode node="subject;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\ContactForm.php;f8;6;16;6;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+				<treenode node="verifyCode;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\ContactForm.php;f8;8;19;8;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Controller;PHP:Class Name;E:\xampp\htdocs\DL\protected\components\Controller.php;f0;5;1;32;;;;vpos;;vCController;;c;;r;;d0,6;;b0,0;;m">
+				<treenode node="performAjaxValidation;PHP:Function Name;E:\xampp\htdocs\DL\protected\components\Controller.php;f11;23;2;30;;;;vpos;;v;;r;;d1,24;;b2,0;;mmodel;;pid;;p">
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\components\Controller.php;f14;25;20;25;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\components\Controller.php;f50;23;53;23;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\components\Controller.php;f42;23;48;23;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="breadcrumbs;PHP:Var Name;E:\xampp\htdocs\DL\protected\components\Controller.php;f8;21;20;21;;;;vposarray;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+				<treenode node="menu;PHP:Var Name;E:\xampp\htdocs\DL\protected\components\Controller.php;f8;15;13;15;;;;vposarray;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="DefaultController;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\DefaultController.php;f1;1;2;75;;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f0;1;1;251;;;;vpos;;vController;;c;;r;;d0,2;;b0,0;;m">
+				<treenode node="accessRules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f8;4;2;11;;;;vpos;;v;;r;;d1,5;;b1,0;;m">
+				</treenode>
+				<treenode node="actionaddToReqCart;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f8;48;2;68;;;;vpos;;v;;r;;d1,49;;b1,0;;mbookId;;p">
+					<treenode node="bookId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f36;48;43;48;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="index;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f3;59;9;59;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="reqCart;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f3;52;11;52;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f2;67;7;67;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actioncheckout;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f8;86;2;131;;;;vpos;;v;;r;;d1,87;;b1,0;;m">
+					<treenode node="bookId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f4;95;11;95;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="bookName;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f5;98;14;98;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="ex;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f24;111;27;111;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="i;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f8;93;10;93;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="isError;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f2;89;10;89;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="message;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f3;92;11;92;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f5;99;11;99;;;;vposRequest;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="reqCart;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f2;88;10;88;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f6;108;11;108;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionContact;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f8;231;2;249;;;;vpos;;v;;r;;d1,232;;b1,0;;m">
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f11;237;17;237;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="headers;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f4;242;12;242;;;;vposContactForm;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f2;233;8;233;;;;vposContactForm;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f2;235;7;235;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionError;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\DefaultController.php;f9;65;3;74;;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f8;161;2;170;;;;vpos;;v;;r;;d1,162;;b1,0;;m">
+					<treenode node="error;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\DefaultController.php;f9;67;15;67;;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f8;163;14;163;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\DefaultController.php;f11;72;16;72;;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f10;168;15;168;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionIndex;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f8;32;2;46;;;;vpos;;v;;r;;d1,33;;b1,0;;m">
+					<treenode node="books;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f2;36;8;36;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="data;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f2;44;7;44;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f2;35;15;35;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f2;34;8;34;;;;vposBooks;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="msg;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f3;40;7;40;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f2;45;7;45;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionLogin;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\DefaultController.php;f9;30;3;54;;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f8;202;2;217;;;;vpos;;v;;r;;d1,203;;b1,0;;m">
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\DefaultController.php;f12;35;18;35;;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f11;208;17;208;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\DefaultController.php;f3;32;9;32;;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f2;204;8;204;;;;vposLoginForm;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\DefaultController.php;f5;48;10;48;;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f2;206;7;206;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionLogout;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\DefaultController.php;f9;59;3;63;;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f8;222;2;226;;;;vpos;;v;;r;;d1,223;;b1,0;;m">
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\DefaultController.php;f3;62;8;62;;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f2;225;7;225;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionRegister;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\DefaultController.php;f9;4;3;26;;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f8;172;2;200;;;;vpos;;v;;r;;d1,173;;b1,0;;m">
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\DefaultController.php;f12;9;18;9;;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f11;179;17;179;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="ex;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f20;191;23;191;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\DefaultController.php;f3;6;9;6;;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f2;174;8;174;;;;vposRegisterForm;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\DefaultController.php;f5;21;10;21;;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f2;176;7;176;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionremoveFromReqCart;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f8;133;2;142;;;;vpos;;v;;r;;d1,134;;b1,0;;mbookId;;p">
+					<treenode node="bookId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f41;133;48;133;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f6;136;11;136;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actions;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f8;13;2;20;;;;vpos;;v;;r;;d1,14;;b1,0;;m">
+				</treenode>
+				<treenode node="actionviewReqCart;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f8;70;2;84;;;;vpos;;v;;r;;d1,71;;b1,0;;m">
+					<treenode node="data;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f3;76;8;76;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f2;72;8;72;;;;vposBooks;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="reqBooks;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f2;73;11;73;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f3;77;8;77;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="filters;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f8;22;2;25;;;;vpos;;v;;r;;d1,23;;b1,0;;m">
+				</treenode>
+				<treenode node="getActionParams;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f8;27;2;30;;;;vpos;;v;;r;;d1,28;;b1,0;;m">
+					<treenode node="_GET;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f21;29;26;29;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f28;29;34;29;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="removeBookFromRequestCart;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f9;144;2;159;;;;vpos;;v;;r;;d1,145;;b3,0;;mbookId;;p">
+					<treenode node="bookId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f44;144;51;144;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="index;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f3;149;9;149;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="reqCart;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php;f2;146;10;146;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="Issue;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Issue.php;f0;6;1;75;;;;vpos;;vCActiveRecord;;c;;r;;d0,7;;b0,0;;m">
+				<treenode node="getAllIssues;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Issue.php;f8;70;2;74;;;;vpos;;v;;r;;d1,71;;b1,0;;m">
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Issue.php;f2;72;15;72;;;;vposCActiveDataProvider;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="model;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Issue.php;f15;13;2;16;;;;vpos;;vIssues;;r Returns the static model of the specified AR class. @param active record class name. @return the static model class;;d1,14;;b1,5;;mstring $className;;p">
+					<treenode node="className;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Issue.php;f30;13;40;13;;;;vposAuthors;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="relations;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Issue.php;f8;46;2;55;;;;vpos;;varray;;r @return relational rules.;;d1,47;;b1,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Issue.php;f8;29;2;41;;;;vpos;;varray;;r @return validation rules for model attributes.;;d1,30;;b1,0;;m">
+				</treenode>
+				<treenode node="search;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Issue.php;f8;58;2;68;;;;vpos;;v;;r;;d1,59;;b1,0;;m">
+					<treenode node="criteria;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Issue.php;f2;63;11;63;;;;vposCDbCriteria;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Issue.php;f35;65;40;65;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="tableName;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Issue.php;f8;21;2;24;;;;vpos;;vstring;;r @return the associated database table name;;d1,22;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="IssueController;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\IssueController.php;f1;1;2;70;;;;vpos;;vController;;c;;r;;d1,2;;b0,0;;m">
+				<treenode node="accessRules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\IssueController.php;f9;3;3;10;;;;vpos;;v;;r;;d2,4;;b1,0;;m">
+				</treenode>
+				<treenode node="actionIndex;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\IssueController.php;f9;17;3;28;;;;vpos;;v;;r;;d2,18;;b1,0;;m">
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\IssueController.php;f9;19;22;19;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="issues;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\IssueController.php;f3;20;10;20;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\IssueController.php;f9;26;14;26;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionreturnBook;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\IssueController.php;f9;30;3;67;;;;vpos;;v;;r;;d2,31;;b1,0;;mUserId;;pBookId;;p">
+					<treenode node="_GET;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\IssueController.php;f23;57;28;57;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\IssueController.php;f27;60;33;60;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="adminModel;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\IssueController.php;f4;34;15;34;;;;vposAdminModel;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="BookId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\IssueController.php;f44;30;51;30;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="msg;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\IssueController.php;f5;38;9;38;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="retVal;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\IssueController.php;f11;42;18;42;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\IssueController.php;f5;60;10;60;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="type;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\IssueController.php;f5;37;10;37;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="UserId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\IssueController.php;f35;30;42;30;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="filters;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\IssueController.php;f9;12;3;15;;;;vpos;;v;;r;;d2,13;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="LibraryModule;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\library\librarymodule.php;f0;2;1;17;;;;vpos;;vCWebModule;;c;;r;;d0,3;;b0,0;;m">
+				<treenode node="init;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\librarymodule.php;f8;7;2;16;;;;vpos;;v;;r;;d1,8;;b1,0;;m">
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\librarymodule.php;f2;13;7;13;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="defaultController;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\librarymodule.php;f8;4;26;4;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+				<treenode node="homeUrl;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\librarymodule.php;f8;5;16;5;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="LoginForm;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php;f0;7;1;95;;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f0;7;1;94;;;;vpos;;vMember;;c;;r;;d0,8;;b0,0;;m">
+				<treenode node="attributeLabels;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php;f8;41;2;47;;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f8;38;2;42;;;;vpos;;v;;r;;d1,39;;b1,0;;m">
+					<treenode node="attribLabels;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f2;40;15;40;;;;vposarray;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="authenticate;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php;f8;54;2;72;;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f8;53;2;71;;;;vpos;;v;;r;;d1,54;;b1,0;;mattribute;;pparams;;p">
+					<treenode node="attribute;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php;f30;54;40;54;;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f30;53;40;53;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="params;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php;f42;54;49;54;;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f42;53;49;53;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php;f6;56;11;56;;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f6;55;11;55;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="login;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php;f8;78;2;94;;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f8;77;2;93;;;;vpos;;vboolean;;r Logs in the user using the given username and password in the model. @return whether login is successful;;d1,78;;b1,0;;m">
+					<treenode node="duration;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php;f3;87;12;87;;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f3;86;12;86;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="retVal;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php;f3;89;10;89;;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f3;88;10;88;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php;f5;80;10;80;;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f5;79;10;79;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="model;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php;f15;33;2;36;;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f15;30;2;33;;;;vpos;;v;;r;;d1,31;;b1,5;;mclassName;;p">
+					<treenode node="className;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php;f30;33;40;33;;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f30;30;40;30;;;;vposAuthors;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="rules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php;f8;20;2;31;;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f8;20;2;28;;;;vpos;;v;;r;;d1,21;;b1,0;;m">
+					<treenode node="parentRules;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f2;22;14;22;;;;vposarray;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="tableName;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php;f8;49;2;52;;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f8;44;2;47;;;;vpos;;v;;r;;d1,45;;b1,0;;m">
+				</treenode>
+				<treenode node="_identity;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php;f9;13;19;13;;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f9;13;19;13;;;;vpos;;v;;r;;d-1,-1;;b3,0;;m">
+				</treenode>
+				<treenode node="password;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php;f8;10;17;10;;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f8;10;17;10;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+				<treenode node="rememberMe;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php;f8;11;19;11;;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f8;11;19;11;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+				<treenode node="username;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php;f8;9;17;9;;E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php;f8;9;17;9;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Member;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\library\models\Member.php;f0;6;1;111;;E:\xampp\htdocs\DL\protected\modules\admin\models\Member.php;f0;6;1;100;;;;vpos;;vCActiveRecord;;c;;r;;d0,7;;b0,0;;m">
+				<treenode node="attributeLabels;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\Member.php;f8;70;2;77;;E:\xampp\htdocs\DL\protected\modules\admin\models\Member.php;f8;51;2;59;;;;vpos;;varray;;r @return customized attribute labels (name=&gt;label);;d1,52;;b1,0;;m">
+				</treenode>
+				<treenode node="deleteMember;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Member.php;f8;78;2;99;;;;vpos;;v;;r;;d1,79;;b1,0;;mid;;p">
+					<treenode node="e;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Member.php;f19;94;21;94;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Member.php;f30;78;33;78;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="member;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Member.php;f3;82;10;82;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Member.php;f13;82;18;82;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getAllMembers;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Member.php;f8;72;2;76;;;;vpos;;v;;r;;d1,73;;b1,0;;m">
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Member.php;f2;74;15;74;;;;vposCActiveDataProvider;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="hashUserPassword;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\Member.php;f9;40;2;52;;;;vpos;;v;;r;;d1,41;;b3,0;;misPassword;;p">
+					<treenode node="isPassword;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Member.php;f35;40;46;40;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="str;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Member.php;f3;44;7;44;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Member.php;f15;44;20;44;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="model;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\Member.php;f15;13;2;16;;E:\xampp\htdocs\DL\protected\modules\admin\models\Member.php;f15;13;2;16;;;;vpos;;vUsers;;r Returns the static model of the specified AR class. @param active record class name. @return the static model class;;d1,14;;b1,5;;mstring $className;;p">
+					<treenode node="className;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Member.php;f30;13;40;13;;E:\xampp\htdocs\DL\protected\modules\admin\models\Member.php;f30;13;40;13;;;;vposAuthors;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="relations;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\Member.php;f8;57;2;65;;E:\xampp\htdocs\DL\protected\modules\admin\models\Member.php;f8;40;2;46;;;;vpos;;varray;;r @return relational rules.;;d1,41;;b1,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\Member.php;f8;30;2;38;;E:\xampp\htdocs\DL\protected\modules\admin\models\Member.php;f8;30;2;35;;;;vpos;;varray;;r @return validation rules for model attributes.;;d1,31;;b1,0;;m">
+				</treenode>
+				<treenode node="search;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\Member.php;f8;83;2;110;;E:\xampp\htdocs\DL\protected\modules\admin\models\Member.php;f8;65;2;70;;;;vpos;;vCActiveDataProvider;;r Retrieves a list of models based on the current search /filter conditions. @return the data provider that can return the models based on the search /filter conditions.;;d1,66;;b1,0;;m">
+				</treenode>
+				<treenode node="tableName;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\Member.php;f8;22;2;25;;E:\xampp\htdocs\DL\protected\modules\admin\models\Member.php;f8;21;2;24;;;;vpos;;vstring;;r @return the associated database table name;;d1,22;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="MemberController;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f1;1;2;109;;;;vpos;;vController;;c;;r;;d1,2;;b0,0;;m">
+				<treenode node="accessRules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f9;4;3;11;;;;vpos;;v;;r;;d2,5;;b1,0;;m">
+				</treenode>
+				<treenode node="actiondeleteMember;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f9;66;3;107;;;;vpos;;v;;r;;d2,67;;b1,0;;mid;;p">
+					<treenode node="_GET;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f23;92;28;92;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f27;95;33;95;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="ex;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f24;85;27;85;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f37;66;40;66;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="msg;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f6;76;10;76;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f5;95;10;95;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="type;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f6;75;11;75;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionIndex;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f9;13;3;25;;;;vpos;;v;;r;;d2,14;;b1,0;;m">
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f9;15;22;15;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="members;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f3;16;11;16;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f9;23;14;23;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionupdateMember;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f12;32;6;56;;;;vpos;;v;;r;;d5,33;;b1,0;;mid;;p">
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f18;39;24;39;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f40;32;43;32;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="member;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f9;34;16;34;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f19;34;24;34;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="filters;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f9;27;3;30;;;;vpos;;v;;r;;d2,28;;b1,0;;m">
+				</treenode>
+				<treenode node="loadMemberModel;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f12;58;6;64;;;;vpos;;v;;r;;d5,59;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f37;58;40;58;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f9;60;15;60;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="formId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php;f9;3;16;3;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Publisher;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Publisher.php;f0;6;1;106;;E:\xampp\htdocs\DL\protected\modules\library\models\Publisher.php;f0;6;1;26;;;;vpos;;vCActiveRecord;;c;;r;;d0,7;;b0,0;;m">
+				<treenode node="attributeLabels;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Publisher.php;f11;70;5;82;;;;vpos;;varray;;r @return customized attribute labels (name=&gt;label);;d4,71;;b1,0;;m">
+				</treenode>
+				<treenode node="getAllPublishers;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Publisher.php;f8;100;2;104;;;;vpos;;v;;r;;d1,101;;b1,0;;m">
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Publisher.php;f2;102;15;102;;;;vposCActiveDataProvider;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="model;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Publisher.php;f18;13;5;16;;E:\xampp\htdocs\DL\protected\modules\library\models\Publisher.php;f18;13;5;16;;;;vpos;;vPublishers;;r Returns the static model of the specified AR class. @param active record class name. @return the static model class;;d4,14;;b1,5;;mstring $className;;p">
+					<treenode node="className;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Publisher.php;f33;13;43;13;;E:\xampp\htdocs\DL\protected\modules\library\models\Publisher.php;f33;13;43;13;;;;vposAuthors;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="relations;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Publisher.php;f11;57;5;65;;;;vpos;;varray;;r @return relational rules.;;d4,58;;b1,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Publisher.php;f11;29;5;52;;;;vpos;;varray;;r @return validation rules for model attributes.;;d4,30;;b1,0;;m">
+				</treenode>
+				<treenode node="search;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Publisher.php;f11;88;5;98;;;;vpos;;vCActiveDataProvider;;r Retrieves a list of models based on the current search /filter conditions. @return the data provider that can return the models based on the search /filter conditions.;;d4,89;;b1,0;;m">
+					<treenode node="criteria;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Publisher.php;f8;93;17;93;;;;vposCDbCriteria;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Publisher.php;f44;95;49;95;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="tableName;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Publisher.php;f11;21;5;24;;E:\xampp\htdocs\DL\protected\modules\library\models\Publisher.php;f11;21;5;24;;;;vpos;;vstring;;r @return the associated database table name;;d4,22;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="PublisherController;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f1;1;2;120;;;;vpos;;vController;;c;;r;;d1,2;;b0,0;;m">
+				<treenode node="accessRules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f9;5;3;12;;;;vpos;;v;;r;;d2,6;;b1,0;;m">
+				</treenode>
+				<treenode node="actionCreatePublisher;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f12;34;6;49;;;;vpos;;v;;r;;d5,35;;b1,0;;m">
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f18;41;24;41;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f9;36;15;36;;;;vposPublisher;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f9;39;14;39;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actiondeletePublisher;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f9;69;3;110;;;;vpos;;v;;r;;d2,70;;b1,0;;mid;;p">
+					<treenode node="_GET;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f23;95;28;95;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f27;98;33;98;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="ex;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f24;87;27;87;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f40;69;43;69;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="msg;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f6;78;10;78;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f18;75;23;75;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="type;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f6;77;11;77;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionIndex;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f9;14;3;27;;;;vpos;;v;;r;;d2,15;;b1,0;;m">
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f9;16;22;16;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="msg;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f4;21;8;21;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="publishers;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f3;17;14;17;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f9;25;14;25;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionUpdatePublisher;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f12;51;6;67;;;;vpos;;v;;r;;d5,52;;b1,0;;mid;;p">
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f18;59;24;59;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f43;51;46;51;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f9;53;15;53;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f18;53;23;53;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="filters;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f9;29;3;32;;;;vpos;;v;;r;;d2,30;;b1,0;;m">
+				</treenode>
+				<treenode node="loadPublisherModel;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f12;112;6;118;;;;vpos;;v;;r;;d5,113;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f40;112;43;112;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f9;114;15;114;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="formId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php;f9;3;16;3;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="RegisterForm;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php;f0;2;1;74;;;;vpos;;vMember;;c;;r;;d0,3;;b0,0;;m">
+				<treenode node="attributeLabels;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php;f8;29;2;36;;;;vpos;;v;;r;;d1,30;;b1,0;;m">
+					<treenode node="parentAttribLabels;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php;f2;31;21;31;;;;vposarray;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="hashUserPassword;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php;f9;60;2;72;;;;vpos;;v;;r;;d1,61;;b3,0;;misPassword;;p">
+					<treenode node="isPassword;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php;f35;60;46;60;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="str;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php;f3;64;7;64;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php;f15;64;20;64;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="register;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php;f8;38;2;58;;;;vpos;;v;;r;;d1,39;;b1,0;;m">
+					<treenode node="e;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php;f19;51;21;51;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="retVal;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php;f4;47;11;47;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php;f3;42;8;42;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="rules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php;f8;17;2;27;;;;vpos;;v;;r;;d1,18;;b1,0;;m">
+					<treenode node="parentRules;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php;f2;19;14;19;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="active;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php;f11;8;18;8;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+				<treenode node="email;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php;f8;7;14;7;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+				<treenode node="password;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php;f8;5;17;5;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+				<treenode node="password_2;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php;f8;6;19;6;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+				<treenode node="username;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php;f8;4;17;4;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Request;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Request.php;f0;6;1;75;;E:\xampp\htdocs\DL\protected\modules\library\models\Request.php;f0;6;1;33;;;;vpos;;vCActiveRecord;;c;;r;;d0,7;;b0,0;;m">
+				<treenode node="addRequest;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\library\models\Request.php;f8;26;2;32;;;;vpos;;v;;r;;d1,27;;b1,0;;mbookId;;p">
+					<treenode node="bookId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Request.php;f28;26;35;26;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\library\models\Request.php;f2;28;7;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getAllRequests;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Request.php;f8;59;2;63;;;;vpos;;v;;r;;d1,60;;b1,0;;m">
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Request.php;f2;61;15;61;;;;vposCActiveDataProvider;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="model;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Request.php;f15;13;2;16;;E:\xampp\htdocs\DL\protected\modules\library\models\Request.php;f15;13;2;16;;;;vpos;;vRequests;;r Returns the static model of the specified AR class. @param active record class name. @return the static model class;;d1,14;;b1,5;;mstring $className;;p">
+					<treenode node="className;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Request.php;f30;13;40;13;;E:\xampp\htdocs\DL\protected\modules\library\models\Request.php;f30;13;40;13;;;;vposAuthors;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="relations;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Request.php;f8;29;2;38;;;;vpos;;varray;;r @return relational rules.;;d1,30;;b1,0;;m">
+				</treenode>
+				<treenode node="search;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Request.php;f8;45;2;57;;;;vpos;;vCActiveDataProvider;;r Retrieves a list of models based on the current search /filter conditions. @return the data provider that can return the models based on the search /filter conditions.;;d1,46;;b1,0;;m">
+					<treenode node="criteria;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Request.php;f2;50;11;50;;;;vposCDbCriteria;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Request.php;f32;52;37;52;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="tableName;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Request.php;f8;21;2;24;;E:\xampp\htdocs\DL\protected\modules\library\models\Request.php;f8;21;2;24;;;;vpos;;vstring;;r @return the associated database table name;;d1,22;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="RequestController;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f1;1;2;74;;;;vpos;;vController;;c;;r;;d1,2;;b0,0;;m">
+				<treenode node="accessRules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f9;3;3;10;;;;vpos;;v;;r;;d2,4;;b1,0;;m">
+				</treenode>
+				<treenode node="actionIndex;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f9;17;3;27;;;;vpos;;v;;r;;d2,18;;b1,0;;m">
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f9;19;22;19;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="requests;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f3;20;12;20;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f9;25;14;25;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionissueBook;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f9;28;3;73;;;;vpos;;v;;r;;d2,29;;b1,0;;mid;;pbookId;;puserId;;p">
+					<treenode node="_GET;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f23;62;28;62;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f27;65;33;65;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="adminModel;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f4;32;15;32;;;;vposAdminModel;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="bookId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f39;28;46;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="ex;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f26;55;29;55;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f34;28;37;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="msg;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f5;36;9;36;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="retVal;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f12;42;19;42;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f5;65;10;65;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="type;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f5;35;10;35;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="userId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f48;28;55;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="filters;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php;f9;12;3;15;;;;vpos;;v;;r;;d2,13;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Role;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Role.php;f0;2;1;78;;E:\xampp\htdocs\DL\protected\modules\library\models\Role.php;f0;2;1;37;;;;vpos;;vCActiveRecord;;c;;r;;d0,3;;b0,0;;m">
+				<treenode node="attributeLabels;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Role.php;f8;47;2;54;;;;vpos;;v;;r;;d1,48;;b1,0;;m">
+				</treenode>
+				<treenode node="getAllRoles;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Role.php;f8;72;2;76;;;;vpos;;v;;r;;d1,73;;b1,0;;m">
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Role.php;f2;74;15;74;;;;vposCActiveDataProvider;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getUserRole;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Role.php;f15;58;2;70;;E:\xampp\htdocs\DL\protected\modules\library\models\Role.php;f15;22;2;34;;;;vpos;;v;;r;;d1,23;;b1,5;;mId;;p">
+					<treenode node="Id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Role.php;f36;58;39;58;;E:\xampp\htdocs\DL\protected\modules\library\models\Role.php;f36;22;39;22;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="module;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Role.php;f2;60;9;60;;E:\xampp\htdocs\DL\protected\modules\library\models\Role.php;f2;24;9;24;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="results;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Role.php;f3;64;11;64;;E:\xampp\htdocs\DL\protected\modules\library\models\Role.php;f3;28;11;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="sql;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Role.php;f3;63;7;63;;E:\xampp\htdocs\DL\protected\modules\library\models\Role.php;f3;27;7;27;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="model;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Role.php;f15;9;2;12;;E:\xampp\htdocs\DL\protected\modules\library\models\Role.php;f15;9;2;12;;;;vpos;;vUsers;;r Returns the static model of the specified AR class. @param active record class name. @return the static model class;;d1,10;;b1,5;;mstring $className;;p">
+					<treenode node="className;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Role.php;f30;9;40;9;;E:\xampp\htdocs\DL\protected\modules\library\models\Role.php;f30;9;40;9;;;;vposAuthors;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="relations;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Role.php;f8;22;2;30;;;;vpos;;v;;r;;d1,23;;b1,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Role.php;f11;32;5;45;;;;vpos;;v;;r;;d4,33;;b1,0;;m">
+				</treenode>
+				<treenode node="tableName;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\Role.php;f8;17;2;20;;E:\xampp\htdocs\DL\protected\modules\library\models\Role.php;f8;17;2;20;;;;vpos;;vstring;;r @return the associated database table name;;d1,18;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="RoleController;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f1;1;2;114;;;;vpos;;vController;;c;;r;;d1,2;;b0,0;;m">
+				<treenode node="accessRules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f9;5;3;11;;;;vpos;;v;;r;;d2,6;;b1,0;;m">
+				</treenode>
+				<treenode node="actionCreateRole;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f12;59;6;74;;;;vpos;;v;;r;;d5,60;;b1,0;;m">
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f18;66;24;66;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f9;61;15;61;;;;vposRole;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f9;64;14;64;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actiondeleteRole;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f9;76;3;113;;;;vpos;;v;;r;;d2,77;;b1,0;;mid;;p">
+					<treenode node="_GET;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f20;103;25;103;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f36;104;42;104;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="ex;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f24;96;27;96;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f35;76;38;76;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="msg;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f6;86;10;86;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f15;83;20;83;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="type;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f6;85;11;85;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionIndex;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f9;13;3;25;;;;vpos;;v;;r;;d2,14;;b1,0;;m">
+					<treenode node="books;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f3;16;9;16;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f9;15;22;15;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="msg;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f4;20;8;20;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f9;24;14;24;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionUpdateRole;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f12;41;6;56;;;;vpos;;v;;r;;d5,42;;b1,0;;mid;;p">
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f18;48;24;48;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f38;41;41;41;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f9;43;15;43;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f18;43;23;43;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="filters;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f9;27;3;30;;;;vpos;;v;;r;;d2,28;;b1,0;;m">
+				</treenode>
+				<treenode node="loadRoleModel;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f9;33;3;39;;;;vpos;;v;;r;;d2,34;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f32;33;35;33;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f6;35;12;35;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="formId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php;f9;3;16;3;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="SiteTest;PHP:Class Name;E:\xampp\htdocs\DL\protected\tests\functional\SiteTest.php;f0;2;1;46;;;;vpos;;vWebTestCase;;c;;r;;d0,3;;b0,0;;m">
+				<treenode node="testContact;PHP:Function Name;E:\xampp\htdocs\DL\protected\tests\functional\SiteTest.php;f8;10;2;21;;;;vpos;;v;;r;;d1,11;;b1,0;;m">
+				</treenode>
+				<treenode node="testIndex;PHP:Function Name;E:\xampp\htdocs\DL\protected\tests\functional\SiteTest.php;f8;4;2;8;;;;vpos;;v;;r;;d1,5;;b1,0;;m">
+				</treenode>
+				<treenode node="testLoginLogout;PHP:Function Name;E:\xampp\htdocs\DL\protected\tests\functional\SiteTest.php;f8;23;2;45;;;;vpos;;v;;r;;d1,24;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="User;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f0;6;1;123;;;;vpos;;vCActiveRecord;;c;;r;;d0,7;;b0,0;;m">
+				<treenode node="afterValidate;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f11;43;2;52;;;;vpos;;v;;r;;d1,44;;b2,0;;m">
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f13;47;18;47;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="attributeLabels;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f8;84;2;95;;;;vpos;;varray;;r @return customized attribute labels (name=&gt;label);;d1,85;;b1,0;;m">
+				</treenode>
+				<treenode node="displayUserName;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f8;112;2;115;;;;vpos;;v;;r;;d1,113;;b1,0;;m">
+					<treenode node="username;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f9;114;18;114;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="GetAllUsers;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f8;107;2;111;;;;vpos;;v;;r;;d1,108;;b1,0;;m">
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f2;109;15;109;;;;vposCActiveDataProvider;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="hashUserPassword;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f9;54;2;66;;;;vpos;;v;;r;;d1,55;;b3,0;;misPassword;;p">
+					<treenode node="isPassword;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f35;54;46;54;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="str;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f3;58;7;58;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f15;58;20;58;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="model;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f15;13;2;16;;;;vpos;;vUsers;;r Returns the static model of the specified AR class. @param active record class name. @return the static model class;;d1,14;;b1,5;;mstring $className;;p">
+					<treenode node="className;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f30;13;40;13;;;;vposAuthors;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="relations;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f8;71;2;79;;;;vpos;;varray;;r @return relational rules.;;d1,72;;b1,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f8;29;2;40;;;;vpos;;varray;;r @return validation rules for model attributes.;;d1,30;;b1,0;;m">
+				</treenode>
+				<treenode node="search;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f8;101;2;106;;;;vpos;;vCActiveDataProvider;;r Retrieves a list of models based on the current search /filter conditions. @return the data provider that can return the models based on the search /filter conditions.;;d1,102;;b1,0;;m">
+				</treenode>
+				<treenode node="tableName;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f8;21;2;24;;;;vpos;;vstring;;r @return the associated database table name;;d1,22;;b1,0;;m">
+				</treenode>
+				<treenode node="usersInRole;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f8;117;2;121;;;;vpos;;v;;r;;d1,118;;b1,0;;mid;;p">
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f2;119;15;119;;;;vposCActiveDataProvider;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\models\User.php;f29;117;32;117;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="UserController;PHP:Class Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f1;1;2;187;;;;vpos;;vController;;c;;r;;d1,2;;b0,0;;m">
+				<treenode node="accessRules;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f9;4;3;10;;;;vpos;;v;;r;;d2,5;;b1,0;;m">
+				</treenode>
+				<treenode node="actionCreateUser;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f12;32;3;35;;;;vpos;;v;;r;;d5,33;;b1,0;;m">
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f3;34;8;34;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actiondeleteUser;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f9;137;3;185;;;;vpos;;v;;r;;d2,138;;b1,0;;mid;;p">
+					<treenode node="_GET;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f23;169;28;169;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f39;172;45;172;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="ex;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f25;161;28;161;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f35;137;38;137;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="msg;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f5;144;9;144;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f19;150;24;150;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="type;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f7;152;12;152;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionIndex;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f9;12;3;25;;;;vpos;;v;;r;;d2,13;;b1,0;;m">
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f9;14;22;14;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="msg;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f4;19;8;19;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f9;23;14;23;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="users;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f3;15;9;15;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionupdateUser;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f12;92;6;112;;;;vpos;;v;;r;;d5,93;;b1,0;;mid;;p">
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f18;95;24;95;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f38;92;41;92;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="isActive;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f4;98;13;98;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="roleId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f4;97;11;97;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f12;99;17;99;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="user;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f4;99;9;99;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="actionusersInRole;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f9;115;3;120;;;;vpos;;v;;r;;d2,116;;b1,0;;mid;;p">
+					<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f3;117;16;117;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f36;115;39;115;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f9;118;14;118;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="createOrUpdate;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f10;37;3;90;;;;vpos;;v;;r;;d2,38;;b3,0;;mid;;pisCreate;;p">
+					<treenode node="_POST;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f18;54;24;54;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="e;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f21;77;23;77;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f34;37;37;37;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="isCreate;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f47;37;56;37;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f10;40;16;40;;;;vposUser;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="role;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f21;46;26;46;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="rolearray;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f4;48;14;48;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="roles;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f3;44;9;44;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f13;42;18;42;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="filters;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f9;27;3;30;;;;vpos;;v;;r;;d2,28;;b1,0;;m">
+				</treenode>
+				<treenode node="getAllRoles;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f9;129;3;135;;;;vpos;;v;;r;;d2,130;;b1,0;;m">
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f9;131;15;131;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="loadUserModel;PHP:Function Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f12;121;6;127;;;;vpos;;v;;r;;d5,122;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f35;121;38;121;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f9;123;15;123;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="formId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php;f9;3;16;3;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="WebTestCase;PHP:Class Name;E:\xampp\htdocs\DL\protected\tests\WebTestCase.php;f0;13;1;24;;;;vpos;;vCWebTestCase;;c;;r;;d0,14;;b0,0;;m">
+				<treenode node="setUp;PHP:Function Name;E:\xampp\htdocs\DL\protected\tests\WebTestCase.php;f11;19;2;23;;;;vpos;;v;;r;;d1,20;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="authManager;PHP:Var Name;E:\xampp\htdocs\DL\protected\views\layouts\main.php;f5;32;17;32;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="authors;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\views\book\_form.php;f78;26;86;26;;E:\xampp\htdocs\DL\protected\modules\admin\views\book\create.php;f14;5;22;5;;E:\xampp\htdocs\DL\protected\modules\admin\views\book\update.php;f137;4;145;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="canAddNewBook;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\views\book\index.php;f4;5;18;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="categories;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\views\book\_form.php;f82;20;93;20;;E:\xampp\htdocs\DL\protected\modules\admin\views\book\create.php;f122;4;133;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\book\update.php;f111;4;122;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="config;PHP:Var Name;E:\xampp\htdocs\DL\protected\tests\bootstrap.php;f0;4;7;4;;E:\xampp\htdocs\DL\protected\yiic.php;f0;4;7;4;;E:\xampp\htdocs\DL\index.php;f0;4;7;4;;E:\xampp\htdocs\DL\index-test.php;f0;8;7;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="content;PHP:Var Name;E:\xampp\htdocs\DL\protected\views\layouts\main.php;f9;144;17;144;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="dataProvider;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\views\author\index.php;f11;9;24;9;;E:\xampp\htdocs\DL\protected\modules\admin\views\category\index.php;f11;9;24;9;;E:\xampp\htdocs\DL\protected\modules\admin\views\issue\index.php;f11;5;24;5;;E:\xampp\htdocs\DL\protected\modules\admin\views\member\index.php;f11;8;24;8;;E:\xampp\htdocs\DL\protected\modules\admin\views\publisher\index.php;f11;9;24;9;;E:\xampp\htdocs\DL\protected\modules\admin\views\request\index.php;f11;5;24;5;;E:\xampp\htdocs\DL\protected\modules\admin\views\user\index.php;f11;19;24;19;;E:\xampp\htdocs\DL\protected\modules\admin\views\book\index.php;f11;16;24;16;;E:\xampp\htdocs\DL\protected\modules\admin\views\role\index.php;f11;17;24;17;;E:\xampp\htdocs\DL\protected\modules\library\views\default\index.php;f11;5;24;5;;E:\xampp\htdocs\DL\protected\modules\library\views\default\viewcart.php;f11;5;24;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="error;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\views\default\error.php;f15;7;21;7;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="form;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\views\author\_form.php;f1;4;6;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\book\_form.php;f1;4;6;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\category\_form.php;f1;4;6;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\default\login.php;f1;6;6;6;;E:\xampp\htdocs\DL\protected\modules\admin\views\member\update.php;f1;7;6;7;;E:\xampp\htdocs\DL\protected\modules\admin\views\publisher\_form.php;f1;5;6;5;;E:\xampp\htdocs\DL\protected\modules\admin\views\role\_form.php;f1;4;6;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\user\update.php;f1;7;6;7;;E:\xampp\htdocs\DL\protected\modules\library\views\default\contact.php;f1;13;6;13;;E:\xampp\htdocs\DL\protected\modules\library\views\default\login.php;f1;6;6;6;;E:\xampp\htdocs\DL\protected\modules\library\views\default\register.php;f1;6;6;6;;E:\xampp\htdocs\DL\protected\modules\admin\views\user\_form.php;f1;3;6;3;;;;vposCActiveForm;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="formId;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\views\author\_form.php;f57;4;64;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\author\create.php;f78;4;85;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\author\update.php;f78;4;85;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\book\_form.php;f57;4;64;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\book\create.php;f34;5;41;5;;E:\xampp\htdocs\DL\protected\modules\admin\views\book\update.php;f14;5;21;5;;E:\xampp\htdocs\DL\protected\modules\admin\views\category\_form.php;f55;4;62;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\category\create.php;f79;4;86;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\category\update.php;f78;4;85;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\member\update.php;f57;7;64;7;;E:\xampp\htdocs\DL\protected\modules\admin\views\publisher\_form.php;f57;5;64;5;;E:\xampp\htdocs\DL\protected\modules\admin\views\publisher\create.php;f78;4;85;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\publisher\update.php;f78;4;85;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\role\_form.php;f55;4;62;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\role\create.php;f76;4;83;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\role\update.php;f78;4;85;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\user\update.php;f57;7;64;7;;E:\xampp\htdocs\DL\protected\modules\admin\views\user\create.php;f97;4;104;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\user\_form.php;f55;3;62;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="model;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\views\author\_form.php;f48;2;54;2;;E:\xampp\htdocs\DL\protected\modules\admin\views\author\create.php;f58;4;64;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\author\update.php;f58;4;64;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\book\_form.php;f48;2;54;2;;E:\xampp\htdocs\DL\protected\modules\admin\views\book\create.php;f73;4;79;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\book\update.php;f58;4;64;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\category\_form.php;f48;2;54;2;;E:\xampp\htdocs\DL\protected\modules\admin\views\category\create.php;f58;4;64;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\category\update.php;f58;4;64;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\default\login.php;f30;13;36;13;;E:\xampp\htdocs\DL\protected\modules\admin\views\member\update.php;f35;13;41;13;;E:\xampp\htdocs\DL\protected\modules\admin\views\publisher\_form.php;f48;3;54;3;;E:\xampp\htdocs\DL\protected\modules\admin\views\publisher\create.php;f58;4;64;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\publisher\update.php;f58;4;64;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\role\_form.php;f48;2;54;2;;E:\xampp\htdocs\DL\protected\modules\admin\views\role\create.php;f56;4;62;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\role\update.php;f58;4;64;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\user\update.php;f35;13;41;13;;E:\xampp\htdocs\DL\protected\modules\library\views\default\contact.php;f29;21;35;21;;E:\xampp\htdocs\DL\protected\modules\library\views\default\login.php;f30;13;36;13;;E:\xampp\htdocs\DL\protected\modules\library\views\default\register.php;f30;12;36;12;;E:\xampp\htdocs\DL\protected\modules\admin\views\user\create.php;f58;4;64;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\user\_form.php;f48;1;54;1;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="publishers;PHP:Var Name;E:\xampp\htdocs\DL\protected\modules\admin\views\book\_form.php;f84;32;95;32;;E:\xampp\htdocs\DL\protected\modules\admin\views\book\create.php;f95;4;106;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\book\update.php;f82;4;93;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="roles;PHP:Var Name;E:\xampp\htdocs\DL\protected\views\layouts\main.php;f5;33;11;33;;E:\xampp\htdocs\DL\protected\modules\admin\views\user\update.php;f74;30;80;30;;E:\xampp\htdocs\DL\protected\modules\admin\views\user\create.php;f77;4;83;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\user\_form.php;f74;29;80;29;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="this;PHP:Var Name;E:\xampp\htdocs\DL\protected\views\layouts\main.php;f34;14;39;14;;E:\xampp\htdocs\DL\protected\modules\admin\views\author\_form.php;f9;4;14;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\author\create.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\author\index.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\author\update.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\book\_form.php;f9;4;14;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\book\create.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\book\update.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\category\_form.php;f7;4;12;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\category\create.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\category\index.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\category\update.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\default\error.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\default\login.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\issue\index.php;f0;1;5;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\member\update.php;f0;1;5;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\member\index.php;f0;1;5;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\publisher\_form.php;f9;5;14;5;;E:\xampp\htdocs\DL\protected\modules\admin\views\publisher\create.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\publisher\index.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\publisher\update.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\request\index.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\role\_form.php;f7;4;12;4;;E:\xampp\htdocs\DL\protected\modules\admin\views\role\create.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\role\update.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\user\index.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\user\update.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\library\views\default\contact.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\library\views\default\login.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\library\views\default\register.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\user\create.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\user\_form.php;f7;3;12;3;;E:\xampp\htdocs\DL\protected\modules\admin\views\book\index.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\admin\views\role\index.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\library\views\default\index.php;f1;1;6;1;;E:\xampp\htdocs\DL\protected\modules\library\views\default\viewcart.php;f1;1;6;1;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="yii;PHP:Var Name;E:\xampp\htdocs\DL\index.php;f0;3;4;3;;E:\xampp\htdocs\DL\index-test.php;f0;7;4;7;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="yiic;PHP:Var Name;E:\xampp\htdocs\DL\protected\yiic.php;f0;3;5;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="yiit;PHP:Var Name;E:\xampp\htdocs\DL\protected\tests\bootstrap.php;f0;3;5;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+		</phptree>
+		<jstree>
+		</jstree>
+		<file name="E:\xampp\htdocs\DL\DL.clpprj" crc="936748051"/>
+		<file name="E:\xampp\htdocs\DL\protected\views\layouts\main.php" crc="-813706715"/>
+		<file name="E:\xampp\htdocs\DL\protected\tests\functional\SiteTest.php" crc="-156235079"/>
+		<file name="E:\xampp\htdocs\DL\protected\tests\WebTestCase.php" crc="-842558628"/>
+		<file name="E:\xampp\htdocs\DL\protected\tests\phpunit.xml" crc="-2082664466"/>
+		<file name="E:\xampp\htdocs\DL\protected\tests\bootstrap.php" crc="-1416166054"/>
+		<file name="E:\xampp\htdocs\DL\protected\runtime\gii-1.1.9\ModuleCode.php" crc="591529316"/>
+		<file name="E:\xampp\htdocs\DL\protected\runtime\gii-1.1.9\ModelCode.php" crc="2113517728"/>
+		<file name="E:\xampp\htdocs\DL\protected\runtime\gii-1.1.9\CrudCode.php" crc="1916344715"/>
+		<file name="E:\xampp\htdocs\DL\protected\runtime\auth.txt" crc="2068925325"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\library\views\default\viewcart.php" crc="2044495917"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\library\views\default\register.php" crc="-2063039150"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\library\views\default\login.php" crc="683837700"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\library\views\default\index.php" crc="-1153154455"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\library\views\default\contact.php" crc="896823879"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\library\models\Role.php" crc="1879076016"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\library\models\Request.php" crc="1582027224"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\library\models\RegisterForm.php" crc="1612504694"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\library\models\Publisher.php" crc="269297110"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\library\models\Member.php" crc="-1934961890"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\library\models\LoginForm.php" crc="-1578922023"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\library\models\ContactForm.php" crc="-1467715611"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\library\models\Category.php" crc="-250122392"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\library\models\Book.php" crc="1221928720"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\library\models\Author.php" crc="-1375396498"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\library\controllers\DefaultController.php" crc="630258692"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\library\components\CLibraryUserIdentity.php" crc="1100094762"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\library\librarymodule.php" crc="-1830665333"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\user\update.php" crc="219480892"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\user\index.php" crc="2053578753"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\user\create.php" crc="352615325"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\user\_form.php" crc="1500145055"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\role\update.php" crc="-2107252993"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\role\index.php" crc="-549855529"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\role\create.php" crc="1289855038"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\role\_form.php" crc="1570319856"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\request\index.php" crc="-1318124099"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\publisher\update.php" crc="677093643"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\publisher\index.php" crc="-187948542"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\publisher\create.php" crc="-1654429185"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\publisher\_form.php" crc="1397356429"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\member\update.php" crc="-1267720272"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\member\index.php" crc="1095276934"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\issue\index.php" crc="1230765668"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\default\login.php" crc="-2062435851"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\default\error.php" crc="-1582661192"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\category\update.php" crc="1032071106"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\category\index.php" crc="-443151941"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\category\create.php" crc="-336968280"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\category\_form.php" crc="-1933421444"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\book\update.php" crc="-1437824853"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\book\index.php" crc="624206775"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\book\create.php" crc="307040390"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\book\_form.php" crc="1069785329"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\author\update.php" crc="258242374"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\author\index.php" crc="-2118957011"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\author\create.php" crc="-829741451"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\views\author\_form.php" crc="1968333572"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\models\User.php" crc="1129625517"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\models\Role.php" crc="2009608282"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\models\Request.php" crc="1646944821"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\models\Publisher.php" crc="-716503126"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\models\Member.php" crc="-1222166981"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\models\LoginForm.php" crc="-836187623"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\models\Issue.php" crc="-1650574544"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\models\Category.php" crc="1944346632"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\models\Book.php" crc="1225732217"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\models\Author.php" crc="1848018372"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\models\AdminModel.php" crc="1840423890"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\controllers\UserController.php" crc="1364131268"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\controllers\RoleController.php" crc="-840012192"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\controllers\RequestController.php" crc="-1749712617"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\controllers\PublisherController.php" crc="-1070852772"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\controllers\MemberController.php" crc="-869996929"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\controllers\IssueController.php" crc="299534410"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\controllers\DefaultController.php" crc="-877864035"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\controllers\CategoryController.php" crc="1626880526"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\controllers\BookController.php" crc="-1515095341"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\controllers\AuthorController.php" crc="-373617473"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\components\CAdminUserIdentity.php" crc="-733359986"/>
+		<file name="E:\xampp\htdocs\DL\protected\modules\admin\adminmodule.php" crc="-1799428273"/>
+		<file name="E:\xampp\htdocs\DL\protected\data\schema.sqlite.sql" crc="-1069431656"/>
+		<file name="E:\xampp\htdocs\DL\protected\data\schema.mysql.sql" crc="-956034956"/>
+		<file name="E:\xampp\htdocs\DL\protected\data\auth.php" crc="629028816"/>
+		<file name="E:\xampp\htdocs\DL\protected\config\test.php" crc="1736334867"/>
+		<file name="E:\xampp\htdocs\DL\protected\config\main.php" crc="-157562811"/>
+		<file name="E:\xampp\htdocs\DL\protected\config\console.php" crc="1035527007"/>
+		<file name="E:\xampp\htdocs\DL\protected\components\Controller.php" crc="674699372"/>
+		<file name="E:\xampp\htdocs\DL\protected\components\CDLUser.php" crc="-500436780"/>
+		<file name="E:\xampp\htdocs\DL\protected\components\CDLButtonColumn.php" crc="1546552624"/>
+		<file name="E:\xampp\htdocs\DL\protected\components\CDLAuthManager.php" crc="1043079523"/>
+		<file name="E:\xampp\htdocs\DL\protected\yiic.php" crc="-670792437"/>
+		<file name="E:\xampp\htdocs\DL\protected\.htaccess" crc="-79980978"/>
+		<file name="E:\xampp\htdocs\DL\assets\cc8b909a\listview\jquery.yiilistview.js" crc="-1609288320"/>
+		<file name="E:\xampp\htdocs\DL\assets\cc8b909a\gridview\jquery.yiigridview.js" crc="1209486251"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jui\js\jquery-ui.min.js" crc="1915905842"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jui\js\jquery-ui-i18n.min.js" crc="1399263962"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jui\MIT-LICENSE.txt" crc="225295510"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jquery.yiitab.js" crc="245911034"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jquery.yiiactiveform.js" crc="856915605"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jquery.yii.js" crc="-1969863624"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jquery.treeview.js" crc="-636460687"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jquery.treeview.edit.js" crc="-1216616358"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jquery.treeview.async.js" crc="1213026938"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jquery.rating.js" crc="-9538460"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jquery.multifile.js" crc="-2081414734"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jquery.min.js" crc="-248691372"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jquery.metadata.js" crc="-1357617581"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jquery.maskedinput.min.js" crc="196106460"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jquery.maskedinput.js" crc="309321716"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jquery.js" crc="-1017049996"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jquery.cookie.js" crc="-2027144560"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jquery.bgiframe.js" crc="1305236470"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jquery.ba-bbq.js" crc="-1464250190"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jquery.autocomplete.js" crc="-505151846"/>
+		<file name="E:\xampp\htdocs\DL\assets\c945bcdc\jquery.ajaxqueue.js" crc="1035182378"/>
+		<file name="E:\xampp\htdocs\DL\assets\ac837c6a\listview\jquery.yiilistview.js" crc="-1609288320"/>
+		<file name="E:\xampp\htdocs\DL\assets\ac837c6a\gridview\jquery.yiigridview.js" crc="1209486251"/>
+		<file name="E:\xampp\htdocs\DL\assets\a2d4564\js\fancybox\jquery.fancybox-1.3.1.pack.js" crc="1691307318"/>
+		<file name="E:\xampp\htdocs\DL\assets\a2d4564\js\tools.tooltip-1.2.5.min.js" crc="-190881302"/>
+		<file name="E:\xampp\htdocs\DL\assets\a2d4564\js\main.js" crc="-1150459217"/>
+		<file name="E:\xampp\htdocs\DL\assets\a2d4564\js\jquery.tooltip-1.2.6.min.js" crc="-1125981949"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jui\js\jquery-ui.min.js" crc="-456961991"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jui\js\jquery-ui-i18n.min.js" crc="2017182220"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jui\MIT-LICENSE.txt" crc="225295510"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jquery.yiitab.js" crc="245911034"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jquery.yiiactiveform.js" crc="387776326"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jquery.yii.js" crc="-1969863624"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jquery.treeview.js" crc="-636460687"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jquery.treeview.edit.js" crc="-1216616358"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jquery.treeview.async.js" crc="1213026938"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jquery.rating.js" crc="-9538460"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jquery.multifile.js" crc="-2081414734"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jquery.min.js" crc="-248691372"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jquery.metadata.js" crc="-1357617581"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jquery.maskedinput.min.js" crc="196106460"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jquery.maskedinput.js" crc="309321716"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jquery.js" crc="-1017049996"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jquery.cookie.js" crc="-2027144560"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jquery.bgiframe.js" crc="1305236470"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jquery.ba-bbq.js" crc="-1464250190"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jquery.autocomplete.js" crc="-505151846"/>
+		<file name="E:\xampp\htdocs\DL\assets\7fbbbe3d\jquery.ajaxqueue.js" crc="1035182378"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jui\js\jquery-ui.min.js" crc="-456961991"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jui\js\jquery-ui-i18n.min.js" crc="2017182220"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jui\MIT-LICENSE.txt" crc="225295510"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jquery.yiitab.js" crc="245911034"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jquery.yiiactiveform.js" crc="387776326"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jquery.yii.js" crc="-1969863624"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jquery.treeview.js" crc="-636460687"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jquery.treeview.edit.js" crc="-1216616358"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jquery.treeview.async.js" crc="1213026938"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jquery.rating.js" crc="-9538460"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jquery.multifile.js" crc="-2081414734"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jquery.min.js" crc="-248691372"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jquery.metadata.js" crc="-1357617581"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jquery.maskedinput.min.js" crc="196106460"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jquery.maskedinput.js" crc="309321716"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jquery.js" crc="-1017049996"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jquery.cookie.js" crc="-2027144560"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jquery.bgiframe.js" crc="1305236470"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jquery.ba-bbq.js" crc="-1464250190"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jquery.autocomplete.js" crc="-505151846"/>
+		<file name="E:\xampp\htdocs\DL\assets\7f62b380\jquery.ajaxqueue.js" crc="1035182378"/>
+		<file name="E:\xampp\htdocs\DL\assets\54ee8a5d\listview\jquery.yiilistview.js" crc="-1609288320"/>
+		<file name="E:\xampp\htdocs\DL\assets\54ee8a5d\gridview\jquery.yiigridview.js" crc="1209486251"/>
+		<file name="E:\xampp\htdocs\DL\assets\31e10ebd\js\bootstrap.min.js" crc="-1585527889"/>
+		<file name="E:\xampp\htdocs\DL\assets\31e10ebd\js\bootstrap.js" crc="-1431371314"/>
+		<file name="E:\xampp\htdocs\DL\assets\31e10ebd\js\bootstrap-typeahead.js" crc="496789386"/>
+		<file name="E:\xampp\htdocs\DL\assets\31e10ebd\js\bootstrap-transition.js" crc="1012569503"/>
+		<file name="E:\xampp\htdocs\DL\assets\31e10ebd\js\bootstrap-tooltip.js" crc="46231833"/>
+		<file name="E:\xampp\htdocs\DL\assets\31e10ebd\js\bootstrap-tab.js" crc="-211491127"/>
+		<file name="E:\xampp\htdocs\DL\assets\31e10ebd\js\bootstrap-scrollspy.js" crc="795639549"/>
+		<file name="E:\xampp\htdocs\DL\assets\31e10ebd\js\bootstrap-popover.js" crc="-590119451"/>
+		<file name="E:\xampp\htdocs\DL\assets\31e10ebd\js\bootstrap-modal.js" crc="-2079909129"/>
+		<file name="E:\xampp\htdocs\DL\assets\31e10ebd\js\bootstrap-dropdown.js" crc="2061866851"/>
+		<file name="E:\xampp\htdocs\DL\assets\31e10ebd\js\bootstrap-collapse.js" crc="-998462900"/>
+		<file name="E:\xampp\htdocs\DL\assets\31e10ebd\js\bootstrap-carousel.js" crc="-661351281"/>
+		<file name="E:\xampp\htdocs\DL\assets\31e10ebd\js\bootstrap-button.js" crc="-294959572"/>
+		<file name="E:\xampp\htdocs\DL\assets\31e10ebd\js\bootstrap-alert.js" crc="1595231305"/>
+		<file name="E:\xampp\htdocs\DL\License.txt" crc="-1594733574"/>
+		<file name="E:\xampp\htdocs\DL\index.php" crc="1913195350"/>
+		<file name="E:\xampp\htdocs\DL\index-test.php" crc="-1482997898"/>
+		<file name="E:\xampp\htdocs\DL\DL_MySql.sql" crc="909404411"/>
+		<file name="E:\xampp\htdocs\DL\.htaccess" crc="964784826"/>
+	</codestructure><cakedata>
+	</cakedata>
+	<dplmenupath>
+	</dplmenupath><smartyassings>
+	</smartyassings></project>
