@@ -106,11 +106,11 @@ Digital Library is a full-fledged web application built using Yii/PHP. The main 
 
 ####Software Requirements:
 
-- Built with Yii 1.1.9, PHP 5.3.8 and MySQL 5.5
+- Yii 1.1.9+, PHP 5.3+ and MySQL 5.0+
 
 ####Installtion:
 
-- Download and install the app in a web-accessible folder
-- Change the path to Yii framework wherever necessary
+- Clone or copy the app in a web-accessible folder
+- Checkout the submodules if cloned via git or copy/symlink the yii-framework to `./protected/yiiCore/`
 - Create the database
 - **Go!**

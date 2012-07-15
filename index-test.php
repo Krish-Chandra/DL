@@ -5,7 +5,7 @@
  */
 
 // change the following paths if necessary
-$yii='F:\Yii_1_1_10\framework\yii.php';
+$yii=dirname(__FILE__).'/protected/yiiCore/framework/yii.php';
 $config=dirname(__FILE__).'/protected/config/test.php';
 
 // remove the following line when in production mode

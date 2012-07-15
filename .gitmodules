@@ -1,0 +1,3 @@
+[submodule "protected/yiiCore"]
+	path = protected/yiiCore
+	url = https://github.com/yiisoft/yii.git
