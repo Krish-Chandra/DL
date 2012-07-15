@@ -37,7 +37,7 @@ return array(
 	// application components
 	'components'=>array(
 		'authManager'=>array('class'=>'CDLAuthManager'),
-		'cache'=>array('class'=>'system.caching.CMemCache', 'servers'=>array(array('host'=>'127.0.0.1', 'port'=>11211, 'weight'=>60))),
+		'cache'=>require dirname(__FILE__).'/cache.php',
 		'session'=>array('autoStart'=>true,),
 		'user'=>array(
 			'class'=>'CDLUser',
