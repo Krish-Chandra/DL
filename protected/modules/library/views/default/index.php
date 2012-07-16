@@ -11,7 +11,7 @@
 <?php	
 //			echo CHtml::beginform(Yii::app()->createUrl('library/default/addToReqCart'));
 			$this->widget(
-							'zii.widgets.Grid.CGridView',
+							'zii.widgets.grid.CGridView',
 							array
 							(
 								'id' => 'booksCatalogGrid',

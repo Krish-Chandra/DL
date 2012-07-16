@@ -21,7 +21,7 @@ if ($canAddNewBook)
 			<h2 class="large box-head"><strong>Books</strong></h2> 
 <?php	
 			$this->widget(
-							'zii.widgets.Grid.CGridView',
+							'zii.widgets.grid.CGridView',
 							array
 							(
 								'id' => 'booksGrid',

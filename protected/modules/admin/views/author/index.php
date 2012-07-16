@@ -14,7 +14,7 @@
 			<h2 class="large box-head"><strong>Authors</strong></h2> 
 <?php	
 		$this->widget(
-						'zii.widgets.Grid.CGridView',
+						'zii.widgets.grid.CGridView',
 						array
 						(
 							'id' => 'authorsGrid',

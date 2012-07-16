@@ -10,7 +10,7 @@ $this->pageTitle = Yii::app()->name . ' - Issues';
 			<h2 class="large box-head"><strong>Issues</strong></h2> 
 <?php	
 		$this->widget(
-						'zii.widgets.Grid.CGridView',
+						'zii.widgets.grid.CGridView',
 						array
 						(
 							'id' => 'issuesGrid',

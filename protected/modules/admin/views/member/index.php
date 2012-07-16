@@ -17,7 +17,7 @@ $this->pageTitle = Yii::app()->name . ' - Members';
 <?php	
 	$this->widget
 	(
-		'zii.widgets.Grid.CGridView',
+		'zii.widgets.grid.CGridView',
 		array
 		(
 			'id' => 'membersGrid',

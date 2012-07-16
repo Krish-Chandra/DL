@@ -26,7 +26,7 @@
 <?php	
 			$this->widget
 			(
-				'zii.widgets.Grid.CGridView',
+				'zii.widgets.grid.CGridView',
 				array
 				(
 					'id'=>'rolesGrid',

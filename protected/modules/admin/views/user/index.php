@@ -29,7 +29,7 @@
 			echo CHtml::beginform(Yii::app()->createUrl('admin/users/inactivateUsers'));
 				$this->widget
 				(
-					'zii.widgets.Grid.CGridView',
+					'zii.widgets.grid.CGridView',
 					array
 					(
 						'id' => 'usersGrid',
