@@ -116,7 +116,7 @@ Digital Library is a full-fledged web application built using Yii/PHP. The main 
 	- **Detailed steps for installing the project on local machine:**
 		- Using Git:
 			- using Git version 1.6.5 or greater
-				git clone --recursive https://github.com/Krish-Chandra/DL.git
+				- git clone --recursive https://github.com/Krish-Chandra/DL.git
 			- Using earlier versions of Git
 				- git clone https://github.com/Krish-Chandra/DL.git
 				- cd DL (DL is the folder in which the project is installed/cloned)
