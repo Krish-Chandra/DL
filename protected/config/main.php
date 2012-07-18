@@ -60,7 +60,7 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=Digital_Library',
+			'connectionString' => 'mysql:host=localhost;dbname=digital_library',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
