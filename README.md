@@ -64,7 +64,7 @@ Digital Library is a full-fledged web application built using Yii/PHP. The main 
 	- Change the role for a user
 
 
-**Library Module:**
+##Library Module:
 
 	Is the frontend of the application that will be used by members
 
@@ -108,9 +108,24 @@ Digital Library is a full-fledged web application built using Yii/PHP. The main 
 
 - Yii 1.1.9+, PHP 5.3+ and MySQL 5.0+
 
-####Installtion:
+####Installation:
 
 - Clone or copy the app in a web-accessible folder
 - Checkout the submodules if cloned via git or copy/symlink the yii-framework to `./protected/yiiCore/`
+
+	- **Detailed steps for installing the project on local machine:**
+		- Using Git:
+			- using Git version 1.6.5 or greater
+				git clone --recursive https://github.com/Krish-Chandra/DL.git
+			- Using earlier versions of Git
+				- git clone https://github.com/Krish-Chandra/DL.git
+				- cd DL (DL is the folder in which the project is installed/cloned)
+				- git submodule init
+				- git submodule update
+
+		- Using the Zip files:
+			- Download the project zip file, unzip the contents to a web-accessible folder
+			- Download the Yii framework zip file from Yii website or GitHub, unzip the conents to './protected/yiiCore/'
+
 - Create the database
 - **Go!**
