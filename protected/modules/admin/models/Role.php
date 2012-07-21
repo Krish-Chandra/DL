@@ -76,4 +76,17 @@ class Role extends CActiveRecord
 		return $dataProvider;
 	}
 
+	public function getRoleNameById($Id)
+	{
+		$result = self::model()->findByPk($Id);
+		if ($result === NULL)
+		{
+			return NULL;
+		}
+		else
+		{
+			return $result->rolename;
+		}
+	}
+
 }

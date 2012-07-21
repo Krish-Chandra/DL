@@ -23,7 +23,7 @@
 
 		<div class="span-15 box" id="gridDiv">
 		
-			<h2 class="large box-head"><strong>Admin Users</strong></h2> 
+			<h2 class="large box-head"><strong>Admin Users <?php echo isset($roleName) ? " in role: " . $roleName : ""; ?> </strong></h2> 
 			
 <?php	
 			echo CHtml::beginform(Yii::app()->createUrl('admin/users/inactivateUsers'));

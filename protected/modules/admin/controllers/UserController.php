@@ -116,7 +116,7 @@
 		public function actionusersInRole($id)		
 		{
 			$dataProvider = User::model()->usersInRole($id);
-	        $this->render('index', array('dataProvider' => $dataProvider,));
+	        $this->render('index', array('dataProvider' => $dataProvider, 'roleName' => Role::model()->getRoleNameById($id)));
 			
 		}
 	    public function loadUserModel($id)

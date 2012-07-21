@@ -22,7 +22,7 @@
 
 			if (empty($issues))
 			{
-				Yii::app()->user->setFlash('error', "No book has been issued to users!");	
+				Yii::app()->user->setFlash('error', "No book has been issued to Members!");	
 			}
 	        $this->render('index', array('dataProvider' => $dataProvider));
 			
