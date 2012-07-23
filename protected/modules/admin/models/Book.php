@@ -41,7 +41,8 @@ class Book extends CActiveRecord
 			array('title', 'unique', 'message' => 'The entered Book has already been added!'),
 			array('title', 'length', 'max'=>100),
 			array('isbn', 'required'),
-			array('isbn', 'match', 'pattern' => '/^ISBN\x20(?=.{13}$)\d{1,5}([- ])\d{1,7}\1\d{1,6}\1(\d|X)$/'),
+			//Regex pattern for isbn is by Darren Neimke, taken from www.regexlib.com
+			array('isbn', 'match', 'pattern' => '/^ISBN\s(?=[-0-9xX ]{13}$)(?:[0-9]+[- ]){3}[0-9]*[xX0-9]$/'),
 //			array('isbn', 'length', 'min' => '10', 'max'=>'13'),
 			array('total_copies', 'numerical', 'min' => 1, 'max' => 200),
 			array('total_copies', 'numerical', 'min'=>1),			
