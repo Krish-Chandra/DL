@@ -123,6 +123,11 @@ Digital Library is a full-fledged web application built using Yii/PHP. The main 
 				- git submodule init
 				- git submodule update
 
+			- Another way to setup the project 
+				- git clone https://github.com/Krish-Chandra/DL.git
+				- cd DL\protected
+				- git clone https://github.com/yiisoft/yii.git yiiCore
+
 		- Using the Zip files:
 			- Download the project zip file, unzip the contents to a web-accessible folder
 			- Download the Yii framework zip file from Yii website or GitHub, unzip the conents to './protected/yiiCore/'
