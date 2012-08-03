@@ -16,7 +16,8 @@ Digital Library is a full-fledged web application built using Yii/PHP. The main 
 ####Books:
 
 - Add/update/delete books
-	- Currently, a book can have only one author, category, and publisher
+	- A book can have upto 3 authors and categories
+		- The app uses the CAdvancedArBehavior extension to implement this feature
 	- Before adding a book, atleast one author, category, and publisher need to be added to the system
 			
 ####Authors, Publishers and Categories:
@@ -93,6 +94,7 @@ Digital Library is a full-fledged web application built using Yii/PHP. The main 
 ####App specific:
 
 - Allowing multiple authors and categories for a book
+	- In this branch, a book can have a max of 3 authors and categories
 - Role-based access control is a manual process
 	- Need an interface to automate this process
 - Concurrency support
@@ -100,6 +102,8 @@ Digital Library is a full-fledged web application built using Yii/PHP. The main 
 ####Yii specific:
 
 - Caching 
+	- Is implemented in this branch
+	- Duration is specified in the main.php config file
 - Security
 - i18n
 - Search
