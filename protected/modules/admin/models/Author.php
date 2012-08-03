@@ -61,7 +61,8 @@ class Author extends CActiveRecord
         // class name for the relations automatically generated below.
 		return array
 		(
-			'books' => array(self::HAS_MANY, 'Books', 'AuthorId'),
+			//'books' => array(self::HAS_MANY, 'Books', 'AuthorId'),
+            'books' => array(self::MANY_MANY, 'Book', 'book_author(author_id, book_id)')            
 		); 
 
     }
@@ -96,7 +97,14 @@ class Author extends CActiveRecord
 	
 	public function getAllAuthors()
 	{
-		$dataProvider = new CActiveDataProvider('Author');
+		$dependency = new CDbCacheDependency('SELECT MAX(update_time) FROM author');
+		$dataProvider =  new CActiveDataProvider(self::model()->cache(Yii::app()->params['cacheDuration'], $dependency, 2), array('pagination' => array ('pageSize' => 50)));	 
 		return $dataProvider;
 	}
+	
+	public function beforeSave()
+	{
+		$this->update_time = new CDbExpression('NOW()'); //date("Y-m-d H:i:s");				 
+	    return parent::beforeSave();
+	}	
 }	

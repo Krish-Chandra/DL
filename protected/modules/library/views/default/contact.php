@@ -11,7 +11,8 @@
 
 <div class="form">
 <?php
-	$form=$this->beginWidget('CActiveForm', array('id' => 'contact-form', 'enableClientValidation' => true, 'enableAjaxValidation' => true, 'errorMessageCssClass'=>'errorMsg',));
+	$form=$this->beginWidget('CActiveForm', array('id' => 'contact-form', 'enableClientValidation' => true, 'enableAjaxValidation' => true,
+							'focus' => array($model, 'name'), 'errorMessageCssClass'=>'errorMsg',));
 ?>
 	<div class="span-21 box">
 		<h2 class="large box-head"><strong>Contact Admin</strong></h2> 	

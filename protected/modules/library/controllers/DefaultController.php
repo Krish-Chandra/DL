@@ -57,11 +57,11 @@ class DefaultController extends Controller
 			$reqCart = array();	
 		}
 		
-			$index = array_search($bookId, $reqCart);					
-			if ($index === FALSE) //Add the book to the cart if only it's not there already
-			{
-				$reqCart[] = $bookId;
-			}
+		$index = array_search($bookId, $reqCart);					
+		if ($index === FALSE) //Add the book to the cart if only it's not there already
+		{
+			$reqCart[] = $bookId;
+		}
 			
 		Yii::app()->session['reqCart'] = $reqCart;
 		Yii::app()->user->setFlash('message', "Selected books have been successfully added to the request cart!");		
@@ -72,7 +72,7 @@ class DefaultController extends Controller
 	{
 		$model = Book::model();
 		$reqBooks = $model->getRequestedBooks(); //Get all the books that have been added to the cart
-		if ($reqBooks != NULL)
+		if (!empty($reqBooks->data))
 		{
 			$data = array('dataProvider' => $reqBooks);		
 			$this->render('viewcart', $data);
@@ -97,16 +97,25 @@ class DefaultController extends Controller
 				try
 				{
 					$bookName = Book::model()->getBookNameById($bookId);
-					$model = new Request;
-					if (!$model->addRequest($bookId))
+					if ($bookName === null) //Unexpected: Book could have been deleted from the system after it's been added to the request cart
 					{
-						$message .= "{$bookName} <br/>";
-						$isError = TRUE;
+						$isError = true;
+						$message = "Couldn't process all your requests! Contact the Administrator!!";
+						$this->removeBookFromRequestCart($bookId);						
 					}
 					else
 					{
-						//Request for the book is successfully processed. We need to remove the book ($bookId) from the cart
-						$this->removeBookFromRequestCart($bookId);
+						$model = new Request;
+						if (!$model->addRequest($bookId))
+						{
+							$message .= "{$bookName} <br/>";
+							$isError = TRUE;
+						}
+						else	
+						{
+							//Request for the book is successfully processed. We need to remove the book ($bookId) from the cart
+							$this->removeBookFromRequestCart($bookId);
+						}
 					}
 				}
 				catch (CDbException $ex)
@@ -119,6 +128,11 @@ class DefaultController extends Controller
 			{
 				Yii::app()->session->clear();
 				Yii::app()->user->setFlash('message', "All your requests have been successfully processed!");				
+				$this->redirect(array('index'));		
+			}
+			else
+			{
+				Yii::app()->user->setFlash('error', $message);				
 				$this->redirect(array('index'));		
 			}
 		}

@@ -5,7 +5,8 @@ $this->pageTitle = Yii::app()->name . ' - Update Member';
 <div class="box span-20 prepend-top">
 	<div class="large box-head"><strong>Edit Member</strong></div>
 <?php 
-	$form = $this->beginWidget('CActiveForm', array('id' => $formId, 'enableAjaxValidation' => true, 'enableClientValidation' => true, 'errorMessageCssClass' => 'errorMsg'));
+	$form = $this->beginWidget('CActiveForm', array('id' => $formId, 'enableAjaxValidation' => true, 'enableClientValidation' => true,
+								'focus' => array($model, 'active'), 'errorMessageCssClass' => 'errorMsg'));
 ?>
 
 <!--    	<?php echo $form->errorSummary($model); ?> -->

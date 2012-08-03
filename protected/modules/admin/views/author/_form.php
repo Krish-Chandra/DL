@@ -2,7 +2,8 @@
 
 	<div class="large box-head"><strong><?php echo $model->isNewRecord ? 'Add Author' : 'Edit Author'; ?></strong></div>
 <?php 
-	$form = $this->beginWidget('CActiveForm', array('id' => $formId, 'enableAjaxValidation' => true, 'enableClientValidation' => true, 'errorMessageCssClass' => 'errorMsg'));
+	$form = $this->beginWidget('CActiveForm', array('id' => $formId, 'enableAjaxValidation' => true, 'enableClientValidation' => true,
+								'focus' => array($model, 'authorname'), 'errorMessageCssClass' => 'errorMsg'));
 ?>
 
 <!--    <p class="note">Fields with <span class="required">*</span> are required.</p> -->

@@ -2,7 +2,8 @@
 
 	<div class="large box-head"><strong><?php echo $model->isNewRecord ? 'Add Book' : 'Edit Book'; ?></strong></div>
 <?php 
-	$form = $this->beginWidget('CActiveForm', array('id' => $formId, 'enableAjaxValidation' => true, 'enableClientValidation' => true, 'errorMessageCssClass' => 'errorMsg'));
+	$form = $this->beginWidget('CActiveForm', array('id' => $formId, 'enableAjaxValidation' => true, 'enableClientValidation' => true,
+								'focus' => array($model, 'title'), 'errorMessageCssClass' => 'errorMsg'));
 ?>
 
 <!--    <p class="note">Fields with <span class="required">*</span> are required.</p> -->
@@ -16,16 +17,47 @@
 	        <?php echo $form->error($model, 'title'); ?>
 		</div>
 		<div>
-	        <?php echo $form->labelEx($model, 'category_id', array('class' => 'label')); ?>
+	        <?php echo $form->labelEx($model, 'Categories', array('class' => 'label')); ?>
 			<br />
-	        <?php echo CHtml::dropDownList('Book[category_id]', $model->category_id, $categories); ?> 
-	        <?php echo $form->error($model, 'category_id'); ?>
+<?php 
+
+			if ($model->isNewRecord	)
+			{
+				$catKeys = array_keys($categories);			
+				//Make sure atleast one category is selected
+				//So, remove the "- Select -" item from the first list
+		        echo CHtml::dropDownList('Categories[0]', array($catKeys["1"]), array_diff($categories, array("- Select -")));
+		        echo CHtml::dropDownList('Categories[1]', '0', $categories);	
+		        echo CHtml::dropDownList('Categories[2]', '0', $categories); 
+			}			
+			else
+			{
+				$count = sizeof($model->categories);
+				for ($indx = 0; $indx < $count; $indx++)
+				    echo CHtml::dropDownList(sprintf('Categories[%d]', $indx), array($model->categories[$indx]->id), $categories);
+			}
+?>			
 		</div>
 		<div>
-	        <?php echo $form->labelEx($model,'author_id', array('class' => 'label')); ?>
-			<br />		
-	        <?php echo CHtml::dropDownList('Book[author_id]', $model->author_id, $authors); ?> 
-	        <?php echo $form->error($model, 'author_id'); ?>
+<?php			
+			echo $form->labelEx($model,'Authors', array('class' => 'label'));
+			echo "<br />";
+			if ($model->isNewRecord	)
+			{
+				$authKeys = array_keys($authors);			
+				//Make sure atleast one author is selected
+				//So, remove the "- Select -" item from the first list
+		        echo CHtml::dropDownList('Authors[0]', array($authKeys["1"]), array_diff($authors, array("- Select -")));
+		        echo CHtml::dropDownList('Authors[1]', null, $authors);	
+		        echo CHtml::dropDownList('Authors[2]', null, $authors);
+			}
+			else
+			{
+				$count = sizeof($model->authors);
+				for ($indx = 0; $indx < $count; $indx++)
+				    echo CHtml::dropDownList(sprintf('Authors[%d]', $indx), array($model->authors[$indx]->id), $authors);
+			}
+?>			
 		</div>
 		<div>		
 	        <?php echo $form->labelEx($model, 'publisher_id', array('class' => 'label')); ?>

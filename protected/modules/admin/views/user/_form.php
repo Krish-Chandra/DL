@@ -1,7 +1,8 @@
 <div class="box span-20 prepend-top">
 	<div class="large box-head"><strong><?php echo $model->isNewRecord ? 'Add Admin User' : 'Edit Admin User'; ?></strong></div>
 <?php 
-	$form=$this->beginWidget('CActiveForm', array('id' => $formId, 'enableAjaxValidation' => true, 'enableClientValidation' => true, 'errorMessageCssClass'=>'errorMsg'));
+	$form=$this->beginWidget('CActiveForm', array('id' => $formId, 'enableAjaxValidation' => true, 'enableClientValidation' => true,
+							'focus' => array($model, 'username'), 'errorMessageCssClass'=>'errorMsg'));
 ?>
 
     	<!--<?php echo $form->errorSummary($model); ?> -->

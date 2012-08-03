@@ -33,8 +33,8 @@ class Book extends CActiveRecord
 		return array
 		(
             array('title', 'required'),	
-            array('category_id', 'required'),				
-            array('author_id', 'required'),				
+//            array('category_id', 'required'),				
+//            array('author_id', 'required'),				
             array('publisher_id', 'required'),				
             array('total_copies', 'required'),				            
 			array('available_copies', 'required'),							
@@ -69,9 +69,9 @@ class Book extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array
 		(
-			'category'	=> array(self::BELONGS_TO, 'Category', 'category_id'),
-			'author'	=> array(self::BELONGS_TO, 'Author', 'author_id'),
-			'publisher' => array(self::BELONGS_TO, 'Publisher', 'publisher_id'),
+			'categories'	=> array(self::MANY_MANY, 'Category', 'book_category(book_id, category_id)', 'together' => true),
+			'authors'	=> array(self::MANY_MANY, 'Author', 'book_author(book_id, author_id)', 'together' => true),
+			'publisher' => array(self::BELONGS_TO, 'Publisher', 'publisher_id', 'together' => true),
 		);
 	}
 
@@ -83,8 +83,8 @@ class Book extends CActiveRecord
 		return array
 		(
 			'title'				=> 'Title',
-			'category_id'		=> 'Category',
-			'author_id'			=> 'Author',
+//			'category_id'		=> 'Category',
+//			'author_id'			=> 'Author',
 			'publisher_id'		=> 'Publisher',
 			'isbn'				=> 'ISBN',
 			'total_copies'		=> 'Total Copies',
@@ -112,7 +112,8 @@ class Book extends CActiveRecord
 	
 	public function getAllBooks()
 	{
-		$dataProvider = new CActiveDataProvider('Book');
+		$dependency = new CDbCacheDependency('SELECT MAX(update_time) FROM book');
+		$dataProvider =  new CActiveDataProvider(self::model()->cache(Yii::app()->params['cacheDuration'], $dependency, 7), array('pagination' => array ('pageSize' => 50)));	
 		return $dataProvider;
 	}
 	
@@ -128,7 +129,7 @@ class Book extends CActiveRecord
 				$Ids[] = $val;
 			}
 			$criteria->addInCondition('t.id', $Ids);
-			$criteria->with = array('author', 'category', 'publisher');
+			//$criteria->with = array('authors', 'categories', 'publisher');
 			$dataProvider = new CActiveDataProvider($this, array('criteria' => $criteria));
 			return $dataProvider;
 		}
@@ -151,4 +152,14 @@ class Book extends CActiveRecord
 			return $result->title;
 		}
 	}
+	public function beforeSave()
+	{
+		$this->update_time = new CDbExpression('NOW()'); //date("Y-m-d H:i:s");				 
+	    return parent::beforeSave();
+	}	
+	public function behaviors()
+	{
+          return array( 'CAdvancedArBehavior' => array(
+         	 'class' => 'application.extensions.CAdvancedArBehavior')); 
+ 	}	
 }

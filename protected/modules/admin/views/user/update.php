@@ -5,7 +5,8 @@
 <div class="box span-20 prepend-top">
 	<div class="large box-head"><strong>Edit Admin User</strong></div>
 <?php 
-	$form = $this->beginWidget('CActiveForm', array('id' => $formId, 'enableAjaxValidation' => true, 'enableClientValidation' => true, 'errorMessageCssClass' => 'errorMsg'));
+	$form = $this->beginWidget('CActiveForm', array('id' => $formId, 'enableAjaxValidation' => true, 'enableClientValidation' => true,
+								'focus' => array($model, 'role_id'), 'errorMessageCssClass' => 'errorMsg'));
 ?>
 
     	<!--<?php echo $form->errorSummary($model); ?> -->

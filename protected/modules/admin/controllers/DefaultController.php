@@ -68,7 +68,8 @@
 		    if($error = Yii::app()->errorHandler->error)
 		    {
 		    	if(Yii::app()->request->isAjaxRequest)
-		    		echo $error['message'];
+//		    		echo $error['message'];
+					echo "<div class='msg msg-error push-1 span-21  prepend-top'><p><strong>".$error['message']."</strong></p></div>";
 		    	else
 		        	$this->render('error', array('error' => $error));
 		    }

@@ -30,8 +30,8 @@ if ($canAddNewBook)
 								'columns' => array
 								(
 									'title',
-									array('name' => 'Category', 'value' => '$data->category->categoryname', 'sortable' => false),
-									array('name' => 'Author', 'value' => '$data->author->authorname', 'sortable' => false),									
+									array('name' => 'Categories', 'class' =>'CDLDataColumn', 'sortable' => false),									
+									array('name' => 'Authors', 'class' => 'CDLDataColumn', 'sortable' => false),									
 									array('name' => 'Publisher', 'value' => '$data->publisher->publishername', 'sortable' => false),																					
 									'isbn',
 									array('name' => 'Total', 'value' => '$data->total_copies', 'sortable' => false),

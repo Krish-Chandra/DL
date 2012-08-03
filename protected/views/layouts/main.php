@@ -18,12 +18,18 @@
 	<body>
 	    <div class="container box">
 	        <div id="header" class="span-24">
+<?php
+			if ($this->beginCache("header", array('duration'=>Yii::app()->params['cacheDuration'])))
+			{
+?>			
 				<div class="span-24">
 		            <img class="left" alt="Library" src="<?php echo Yii::app()->request->baseUrl; ?>/images/library-icon.png" />
 		            <h1>DIGITAL LIBRARY</h1>
 				</div>	
 <?php	
-	
+				$this->endCache();
+			}				
+			
 			/* $this in a view refers to the active controller */
 			if (strcasecmp($this->module->name, "admin") == 0)
 			{
@@ -35,6 +41,9 @@
 					if (array_key_exists("admin", array_change_key_case($roles)))
 //					if (array_key_exists("admin", $roles))
 					{
+						if ($this->beginCache("admin_menu", array('duration'=>Yii::app()->params['cacheDuration'])))
+						{
+					
 ?>				
 						<div id="navigation" class="span-21">
 							<ul>
@@ -48,12 +57,19 @@
 								<li><a href="<?php echo Yii::app()->createUrl('admin/member');?>"><span>Members</span></a></li>							
 								<li><a href="<?php echo Yii::app()->createUrl('admin/role');?>"><span>Roles</span></a></li>							
 							</ul>
+							
 						</div>
+
 <?php
+						$this->endCache();
+						}
 					}
 					elseif (array_key_exists("supervisor", array_change_key_case($roles)))					
 					//elseif (array_key_exists("supervisor", $roles))  //If (s)he belongs to the supervisor role, allow only restricted access
 					{
+						if ($this->beginCache("supervisor_menu", array('duration'=>Yii::app()->params['cacheDuration'])))
+						{
+					
 ?>					
 						<div id="navigation" class="span-21">
 							<ul>
@@ -64,7 +80,13 @@
 							</ul>
 						</div>
 <?php
+						$this->endCache();
+						}
+
 					}
+						if ($this->beginCache("login_menu", array('duration'=>Yii::app()->params['cacheDuration'])))
+						{
+					
 ?>					
 					<div id="navigation" class="span-1">
 						<ul>
@@ -73,6 +95,9 @@
 					</div>
 					
 <?php
+						$this->endCache();
+						}
+
 				}
 ?>
 			
@@ -86,6 +111,7 @@
 					<div id="navigation" class="span-21">
 						<ul>
 							<li><a href="<?php echo Yii::app()->createUrl('library/default/index');?>"><span>Home</span></a></li>
+							<li><a href="<?php echo Yii::app()->createUrl('library/default/viewReqCart');?>"><span>Request Cart</span></a></li>
 						</ul>
 					</div>
 					<div id="navigation" class="span-1">
@@ -102,6 +128,7 @@
 					<div id="navigation" class="span-21">
 						<ul>
 							<li><a href="<?php echo Yii::app()->createUrl('library/default/index');?>"><span>Home</span></a></li>
+							<li><a href="<?php echo Yii::app()->createUrl('library/default/viewReqCart');?>"><span>Request Cart</span></a></li>
 							<li><a href="<?php echo Yii::app()->createUrl('library/default/Contact');?>"><span>Contact Admin</span></a></li>						
 						</ul>
 					</div>
@@ -145,19 +172,27 @@
 				echo $content;  //Display the page content
 ?> 
 			</div>
-			<div id="footer" class="span-24">
-			    <div class="span-5 push-1">
-			    	<p>Developed by <b>Krish Chandra</b></> </p>
-				</div>
-				<div class="span-12 push-7">
-					<div>
-						Design by <a href="http://chocotemplates.com" target="_blank" title="The Sweetest CSS Templates WorldWide">Chocotemplates.com</a>
-						|
-						A couple of icons taken from <a href="http://www.famfamfam.com/lab/icons/silk/" target="_blank" title="Silk icon set by Mark James">Silk icon set 1.3</a>
+<?php
+			if ($this->beginCache("footer", array('duration'=>Yii::app()->params['cacheDuration'])))
+			{
+				
+?>			
+				<div id="footer" class="span-24">
+				    <div class="span-5 push-1">
+				    	<p>Developed by <b>Krish Chandra</b></> </p>
+					</div>
+					<div class="span-12 push-7">
+						<div>
+							Design by <a href="http://chocotemplates.com" target="_blank" title="The Sweetest CSS Templates WorldWide">Chocotemplates.com</a>
+							|
+							A couple of icons taken from <a href="http://www.famfamfam.com/lab/icons/silk/" target="_blank" title="Silk icon set by Mark James">Silk icon set 1.3</a>
+						</div>
 					</div>
 				</div>
-				
-			</div>
+<?php
+				$this->endCache();
+			}				
+?>				
 		</div>
 	</body>
 </html>

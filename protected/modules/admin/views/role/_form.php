@@ -2,7 +2,8 @@
 
 	<div class="large box-head"><strong><?php echo $model->isNewRecord ? 'Add Role' : 'Edit Role'; ?></strong></div>
 <?php 
-	$form=$this->beginWidget('CActiveForm', array('id' => $formId, 'enableAjaxValidation' => true, 'enableClientValidation' => true, 'errorMessageCssClass' => 'errorMsg'));
+	$form=$this->beginWidget('CActiveForm', array('id' => $formId, 'enableAjaxValidation' => true, 'enableClientValidation' => true,
+							'focus' => array($model, 'rolename'), 'errorMessageCssClass' => 'errorMsg'));
 ?>
 
 <!--    <?php echo $form->errorSummary($model); ?> -->

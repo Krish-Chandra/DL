@@ -70,7 +70,9 @@ class Issue extends CActiveRecord
 	
 	public function getAllIssues()
 	{
-		$dataProvider = new CActiveDataProvider('Issue');
+		$dependency = new CDbCacheDependency('SELECT MAX(update_time) FROM issue');	
+		$dataProvider =  new CActiveDataProvider(self::model()->cache(Yii::app()->params['cacheDuration'], $dependency, 2), array('pagination' => array ('pageSize' => 50)));		
 		return $dataProvider;
 	}	
+	
 }

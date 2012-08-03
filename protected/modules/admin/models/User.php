@@ -105,11 +105,14 @@ class User extends CActiveRecord
 		// should not be searched.
 
 	}
+	
 	public function GetAllUsers()
 	{
-		$dataProvider=new CActiveDataProvider('User');
+		$dependency = new CDbCacheDependency('SELECT MAX(update_time) FROM admin_user');
+		$dataProvider =  new CActiveDataProvider(self::model()->cache(Yii::app()->params['cacheDuration'], $dependency, 2), array('pagination' => array ('pageSize' => 50)));	
 		return $dataProvider;
 	}
+	
 	public function displayUserName()
 	{
 		return $username;
@@ -121,4 +124,9 @@ class User extends CActiveRecord
 		return $dataProvider;
 	}
 	
+	public function beforeSave()
+	{
+		$this->update_time = new CDbExpression('NOW()'); //date("Y-m-d H:i:s");				 
+	    return parent::beforeSave();
+	}	
 }

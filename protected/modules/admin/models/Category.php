@@ -51,7 +51,7 @@ class Category extends CActiveRecord
         // class name for the relations automatically generated below.
 		return array
 		(
-			'books' => array(self::HAS_MANY, 'Book', 'category_id'),
+			'books' => array(self::MANY_MANY, 'Book', 'book_category(category_id, book_id)'),
 		); 
 
     }
@@ -85,7 +85,14 @@ class Category extends CActiveRecord
 	
 	public function getAllCategories()
 	{
-		$dataProvider = new CActiveDataProvider('Category');
+		$dependency = new CDbCacheDependency('SELECT MAX(update_time) FROM category');	
+		$dataProvider =  new CActiveDataProvider(self::model()->cache(Yii::app()->params['cacheDuration'], $dependency, 2), array('pagination' => array ('pageSize' => 50)));		
 		return $dataProvider;
 	}
+	
+	public function beforeSave()
+	{
+		$this->update_time = new CDbExpression('NOW()'); //date("Y-m-d H:i:s");				 
+	    return parent::beforeSave();
+	}	
 }

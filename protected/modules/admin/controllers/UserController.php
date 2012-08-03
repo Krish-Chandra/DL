@@ -37,10 +37,28 @@
 
 		private function createOrUpdate($id = null,  $isCreate = TRUE)		
 		{
+			$msg = '';
 			if ($id == null)
-		        $model = new User();
+			{
+				$model = new User();
+				if ($model === null)
+				{
+					$msg = "Couldn't complete the operation!";
+					Yii::app()->user->setFlash('error', $msg);	
+					$this->redirect(array('index'));
+				}
+			}
 			else
+			{
 				$model = $this->loadUserModel($id);			
+				if ($model === null)
+				{
+					Yii::app()->cache->flush();				
+					$msg = "Couldn't complete the operation as the user is not found!";
+					Yii::app()->user->setFlash('error', $msg);	
+					$this->redirect(array('index'));
+				}
+			}
 	
 			$roles = $this->getAllRoles();
 			
@@ -100,6 +118,7 @@
 				$user = $this->loadUserModel($id);							
 				$user->role_id = $roleId;
 				$user->active = $isActive;
+//				$user->update_time = date("Y-m-d H:i:s");				
 				
 				if ($user->save())
 					Yii::app()->user->setFlash('message', "Successfully updated the User details!");
@@ -122,8 +141,8 @@
 	    public function loadUserModel($id)
 	    {
 	        $model = User::model()->findByPk($id);
-	        if(($model === null) || empty($model))
-	            throw new CHttpException(404, "Couldn't complete the operation!");
+//	        if(($model === null) || empty($model))
+//	            throw new CHttpException(404, "Couldn't complete the operation!");
 	        return $model;
 	    }
 		
@@ -146,40 +165,52 @@
 				}
 	            else
 				{
-					try
+					$model = $this->loadUserModel($id);				
+					if ($model === null)
 					{
-			            if ($this->loadUserModel($id)->delete())
+						Yii::app()->cache->flush();				
+						$msg = "Couldn't complete the operation as the user is not found!";
+						echo "<div class='msg msg-error push-1 span-21  prepend-top'><p><strong>".$msg."</strong></p></div>";					
+					}
+					else
+					{
+						try
 						{
-							$type = "message";
-							$msg = "Successfully deleted the User!";	
+				            if ($model->delete())
+							{
+								$type = "message";
+								$msg = "Successfully deleted the User!";	
+							}
+							else
+							{
+								$type = "error";
+								$msg =  "Couldn't delete the User! Please try again!!";	
+							}
+						}
+						catch (CDbException $ex)
+						{
+							$type = "error";
+							$msg = "Couldn't delete the User! Please try again!!";					
+						}
+			            // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+			            if(!isset($_GET['ajax']))
+						{
+							Yii::app()->cache->flush();
+							Yii::app()->user->setFlash($type, $msg);		
+			                $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
 						}
 						else
 						{
-							$type = "error";
-							$msg =  "Couldn't delete the User! Please try again!!";	
+							if (strcasecmp($type, "message") == 0)
+							{
+								Yii::app()->cache->flush();	
+								echo "<div class='msg msg-ok push-1 span-21  prepend-top'><p><strong>".$msg."</strong></p></div>";
+							}
+							elseif (strcasecmp($type, "error") == 0)
+								echo "<div class='msg msg-error push-1 span-21  prepend-top'><p><strong>".$msg."</strong></p></div>";
 						}
-					}
-					catch (CDbException $ex)
-					{
-						$type = "error";
-						$msg = "Couldn't delete the User! Please try again!!";					
-					}
-				}
-	
-	            // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-	            if(!isset($_GET['ajax']))
-				{
-					Yii::app()->user->setFlash($type, $msg);		
-	                $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
-				}
-				else
-				{
-					if (strcasecmp($type, "message") == 0)
-						echo "<div class='msg msg-ok push-1 span-21  prepend-top'><p><strong>".$msg."</strong></p></div>";
-					elseif (strcasecmp($type, "error") == 0)
-						echo "<div class='msg msg-error push-1 span-21  prepend-top'><p><strong>".$msg."</strong></p></div>";
-				}
-
+					}	
+				}			
 	        }
 	        else
 	            throw new CHttpException(400, 'Invalid request. Please do not repeat this request again.');

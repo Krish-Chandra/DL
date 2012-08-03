@@ -9,7 +9,7 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'defaultController'=>'library/default',
 	'name'=>'Digital Library',
-
+	'timezone' => 'Asia/Calcutta',
 	// preloading 'log' component
 	'preload'=>array('log', 'bootstrap'),
 
@@ -17,6 +17,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.extensions.CAdvancedArBehavior',
 	),
 
 	'modules'=>array(
@@ -95,5 +96,6 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'admin@localhost.com',
 		'salt'=>'9462e8eee0',
+		'cacheDuration' => 180, //Cache for 3 minutes
 	),
 );

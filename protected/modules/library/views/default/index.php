@@ -20,8 +20,8 @@
 								'selectableRows' => 'null',
 								'columns' => array(
 													'title',
-													array('name' => 'Category', 'value' => '$data->category->categoryname'),
-													array('name' => 'Author', 'value' => '$data->author->authorname'),									
+													array('name' => 'Categories', 'class' => 'CDLDataColumn'),
+													array('name' => 'Authors', 'class' => 'CDLDataColumn'),									
 													array('name' => 'Publisher', 'value' => '$data->publisher->publishername'),
 													array('name' => 'ISBN', 'value' => '$data->isbn', 'header' => 'ISBN'),
 													array('name' => 'Total', 'value' => '$data->total_copies'),

@@ -72,7 +72,8 @@ class Member extends CActiveRecord
 	
 	public function getAllMembers()
 	{
-		$dataProvider = new CActiveDataProvider('Member');
+		$dependency = new CDbCacheDependency('SELECT MAX(update_time) FROM user');
+		$dataProvider =  new CActiveDataProvider(self::model()->cache(Yii::app()->params['cacheDuration'], $dependency, 2), array('pagination' => array ('pageSize' => 50)));	
 		return $dataProvider;
 	}
 	
@@ -98,4 +99,9 @@ class Member extends CActiveRecord
 		}
 		
 	}
+	public function beforeSave()
+	{
+		$this->update_time = new CDbExpression('NOW()'); //date("Y-m-d H:i:s");				 
+	    return parent::beforeSave();
+	}	
 }

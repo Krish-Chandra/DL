@@ -100,8 +100,14 @@ class Publisher extends CActiveRecord
 	
 	public function getAllPublishers()
 	{
-		$dataProvider = new CActiveDataProvider('Publisher');
+		$dependency = new CDbCacheDependency('SELECT MAX(update_time) FROM publisher');
+		$dataProvider =  new CActiveDataProvider(self::model()->cache(Yii::app()->params['cacheDuration'], $dependency, 2), array('pagination' => array ('pageSize' => 50)));	
 		return $dataProvider;
 	}
 	
+	public function beforeSave()
+	{
+		$this->update_time = new CDbExpression('NOW()'); //date("Y-m-d H:i:s");				 
+	    return parent::beforeSave();
+	}	
 }

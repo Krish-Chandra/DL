@@ -62,11 +62,20 @@
 	            // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 	            if(!isset($_GET['ajax']))
 				{
+					Yii::app()->cache->flush();
 					Yii::app()->user->setFlash($type, $msg);		
 					$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
 				}
 				else
-			        echo "<div class='msg msg-ok push-1 span-21  prepend-top'><p><strong>".$msg."</strong></p></div>";									
+				{
+					if (strcasecmp($type, "message") == 0)
+					{
+						Yii::app()->cache->flush();
+						echo "<div class='msg msg-ok push-1 span-21  prepend-top'><p><strong>".$msg."</strong></p></div>";
+					}
+					elseif (strcasecmp($type, "error") == 0)
+						echo "<div class='msg msg-error push-1 span-21  prepend-top'><p><strong>".$msg."</strong></p></div>";
+				}
 		    }
 		    else
 		        throw new CHttpException(400, 'Invalid request. Please do not repeat this request again.');

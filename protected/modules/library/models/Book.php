@@ -40,22 +40,23 @@ class Book extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array
 		(
-			'category'	=> array(self::BELONGS_TO, 'Category', 'category_id'),
-			'author'	=> array(self::BELONGS_TO, 'Author', 'author_id'),
-			'publisher' => array(self::BELONGS_TO, 'Publisher', 'publisher_id'),
+			'categories'=> array(self::MANY_MANY, 'Category', 'book_category(book_id, category_id)', 'together' => true),
+			'authors'	=> array(self::MANY_MANY, 'Author', 'book_author(book_id, author_id)', 'together' => true),
+			'publisher' => array(self::BELONGS_TO, 'Publisher', 'publisher_id', 'together' => true),
 		);
 	}
-
 
 	
 	public function getAllBooks()
 	{
-		$dataProvider = new CActiveDataProvider('Book');
+		$dependency = new CDbCacheDependency('SELECT MAX(update_time) FROM book');
+		$dataProvider =  new CActiveDataProvider(self::model()->cache(Yii::app()->params['cacheDuration'], $dependency, 6), array('pagination' => array ('pageSize' => 50)));	
 		return $dataProvider;
 	}
 	
 	public function getRequestedBooks()
 	{
+
 		$criteria = new CDbCriteria();
 		$bookIds = Yii::app()->session['reqCart'];
 		$Ids = array();
@@ -66,8 +67,9 @@ class Book extends CActiveRecord
 				$Ids[] = $val;
 			}
 			$criteria->addInCondition('t.id', $Ids);
-			$criteria->with = array('author', 'category', 'publisher');
-			$dataProvider = new CActiveDataProvider($this, array('criteria' => $criteria));
+			//$criteria->with = array('authors', 'categories', 'publisher');
+			$dependency = new CExpressionDependency("sizeof(Yii::app()->session['reqCart'])");				
+			$dataProvider = new CActiveDataProvider(self::model()->cache(Yii::app()->params['cacheDuration'], $dependency, 4), array('criteria' => $criteria));
 			return $dataProvider;
 		}
 		else

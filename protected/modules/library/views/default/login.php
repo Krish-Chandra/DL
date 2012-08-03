@@ -4,7 +4,8 @@
 
 <div class="form">
 <?php 
-	$form=$this->beginWidget('CActiveForm', array('id' => 'login-form', 'enableClientValidation' => true, 'enableAjaxValidation' => true, 'errorMessageCssClass' => 'errorMsg',));
+	$form=$this->beginWidget('CActiveForm', array('id' => 'login-form', 'enableClientValidation' => true, 'enableAjaxValidation' => true, 
+							'focus' => array($model, 'username'), 'errorMessageCssClass' => 'errorMsg',));
 ?>
 
 		<div class="span-21 box">
