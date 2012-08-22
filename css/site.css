@@ -3,3 +3,52 @@
 	color: red;
 	font-size: 1.2em;
 }
+
+#search-form
+{
+	position:relative
+}
+
+#search-form #SearchTitle,#search-form .text,#search-form input
+{
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	width:100px;
+	height:20px;
+	padding:0px 0px;
+	background:#fff;
+	font-size:1.25em;
+	border:none;
+	margin:0;
+ 	-webkit-border-radius:4px;-moz-border-radius:4px;
+	-ms-border-radius:4px;
+	-o-border-radius:4px;
+	border-radius:4px;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none
+}
+
+.form-item
+{
+	padding-left: 10px;
+}
+#search-form #search-submit
+{
+	background:#EFCA4B url("../images/icon-search.png") no-repeat center;
+	border:none;
+	width:31px;
+	height:20px;
+	display:block;
+	position:absolute;
+	top:0px;
+	right:-1px;
+	-webkit-border-radius:0 4px 4px 0;
+	-moz-border-radius:0 4px 4px 0;
+	-ms-border-radius:0 4px 4px 0;
+	-o-border-radius:0 4px 4px 0;
+	border-radius:0 4px 4px 0
+}
+#search-form #search-submit:hover
+{
+	cursor: hand; cursor: pointer;
+	background-color:#FFEEB4;
+}

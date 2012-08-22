@@ -2,13 +2,6 @@
 	class CategoryController extends Controller
 	{
 		public $formId = 'categories-form';
-		public function accessRules()
-		{
-			return array(
-							array('allow','roles' => array('admin', 'supervisor')),
-							array('deny','users' => array('*')),
-						);
-		}
 		
 		public function actionIndex()
 		{
@@ -143,9 +136,5 @@
 			
 		}	
 		
-		public function filters()
-		{
-			return array('accessControl');
-		}
 	}
 ?>

@@ -18,6 +18,7 @@ return array(
 		'application.models.*',
 		'application.components.*',
 		'application.extensions.CAdvancedArBehavior',
+        'application.modules.srbac.controllers.SBaseController'
 	),
 
 	'modules'=>array(
@@ -32,12 +33,46 @@ return array(
 		),*/
 		'admin',
 		'library',
+        'srbac' => array
+        (
+            'userclass' => 'User',
+            'userid' => 'id',
+            'username' => 'username',
+            'debug' => false,
+            'delimeter'=>"@",
+            'pageSize' => 10,
+            'superUser' => 'admin',
+            'css' => 'srbac.css',
+            'layout' => 'application.views.layouts.main',
+            'notAuthorizedView' => 'admin.views.default.error',
+            'alwaysAllowed'=>array('admin@DefaultLogin', 'admin@DefaultLogout', 'library@DefaultIndex', 'library@DefaultAddtoreqcart',
+            						'library@DefaultViewreqcart', 'library@DefaultRemovefromreqcart', 'library@DefaultLogin',
+            						'library@DefaultLogout', 'library@DefaultRegister', 'library@DefaultActions'),
+            'userActions' => array('show', 'View', 'List', 'Login'),
+            'listBoxNumberOfLines' => 15,
+            'imagesPath' => 'srbac.images',
+            'imagesPack' => 'tango',
+            'iconText' => false,
+            'header' => 'srbac.views.authitem.header',
+            'footer' => 'srbac.views.authitem.footer',
+            'showHeader' => true,
+            'showFooter' => true,
+            'alwaysAllowedPath' => 'srbac.components',
+        ),
 	
 	),
 
 	// application components
 	'components'=>array(
-		'authManager'=>array('class'=>'CDLAuthManager'),
+        'authManager' => array
+        (
+            'class' => 'srbac.components.SDbAuthManager',
+            'connectionID' => 'db',
+            'itemTable' => 'authitem',
+            'assignmentTable' => 'authassignment',
+            'itemChildTable' => 'authitemchild',
+        ),
+
 		'cache'=>require dirname(__FILE__).'/cache.php',
 		'session'=>array('autoStart'=>true,),
 		'user'=>array(
@@ -49,6 +84,7 @@ return array(
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'showScriptName' =>'false',
+			'caseSensitive' => false,
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
@@ -96,6 +132,6 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'admin@localhost.com',
 		'salt'=>'9462e8eee0',
-		'cacheDuration' => 180, //Cache for 3 minutes
+		'cacheDuration' => -1, //Cache for 3 minutes
 	),
 );

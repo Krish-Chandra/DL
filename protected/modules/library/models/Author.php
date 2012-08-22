@@ -23,5 +23,11 @@ class Author extends CActiveRecord
     {
         return 'author';
     }
-
+/*	
+	public function byAuthor($name)
+	{
+	    $this->getDbCriteria()->mergeWith(array('condition'=>'authorname LIKE :name', 'params'=>array(':name' => "%$name%")));
+	    return $this;
+	}
+*/    
 }	

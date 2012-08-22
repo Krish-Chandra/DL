@@ -1,20 +1,6 @@
 <?php
 	class IssueController extends Controller
 	{
-		public function accessRules()
-		{
-	
-			return array(
-							array('allow', 'roles' => array('admin')),
-							array('deny', 'users' => array('*')),
-						);
-		}
-		
-		public function filters()
-		{
-			return array('accessControl');
-		}
-	
 		public function actionIndex()
 		{
 	        $dataProvider = Issue::model()->getAllIssues();

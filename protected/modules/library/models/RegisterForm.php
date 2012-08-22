@@ -45,7 +45,12 @@ class RegisterForm extends Member
 			$this->password_2 = $this->hashUserPassword(false);		
 			$this->active = TRUE;		
 			if ($this->save())
-				$retVal = true;			
+			{
+				//Assign the member to the appropriate role
+//				Yii::app()->authManager->assign('LibraryMember', $this->id); 
+				$retVal = true;	
+			}
+				
 			else
 				$retVal = false;
 		}

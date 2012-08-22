@@ -2,13 +2,6 @@
 	class UserController extends Controller
 	{
 		public $formId = 'user-form';
-		public function accessRules()
-		{
-			return array(
-							array('allow', 'roles' => array('admin')),
-							array('deny', 'users' => array('*')),
-						);
-		}
 	
 		public function actionIndex()
 		{
@@ -25,10 +18,6 @@
 				
 		}
 		
-		public function filters()
-		{
-			return array('accessControl');
-		}
 
 	    public function actionCreateUser()
 	    {
@@ -60,12 +49,6 @@
 				}
 			}
 	
-			$roles = $this->getAllRoles();
-			
-			foreach($roles as $role)
-			{
-				$rolearray[$role->id] = $role->rolename;
-			}
 	
 	        // Uncomment the following line if AJAX validation is needed
 	        $this->performAjaxValidation($model, $this->formId);
@@ -103,9 +86,9 @@
 	                
 	        }
 			if ($isCreate)	
-	        	$this->render('create', array('model' => $model, 'roles' => $rolearray, 'formId' => $this->formId));
+	        	$this->render('create', array('model' => $model, 'formId' => $this->formId));
 			else					
-				$this->render('update', array('model'=>$model, 'roles' => $rolearray, 'formId' => $this->formId));
+				$this->render('update', array('model'=>$model, 'formId' => $this->formId));
 		}
 
 	    public function actionupdateUser($id)
@@ -113,12 +96,9 @@
 	        
 	        if(isset($_POST['User']))
 			{
-				$roleId = $_POST['User']['role_id'];
 				$isActive = $_POST['User']['active'];
 				$user = $this->loadUserModel($id);							
-				$user->role_id = $roleId;
 				$user->active = $isActive;
-//				$user->update_time = date("Y-m-d H:i:s");				
 				
 				if ($user->save())
 					Yii::app()->user->setFlash('message', "Successfully updated the User details!");
@@ -128,32 +108,29 @@
 			}	
 			else
 				$this->createOrUpdate($id, FALSE);			
-	        
 	    }	
 
-		
+/*		
 		public function actionusersInRole($id)		
 		{
 			$dataProvider = User::model()->usersInRole($id);
 	        $this->render('index', array('dataProvider' => $dataProvider, 'roleName' => Role::model()->getRoleNameById($id)));
-			
 		}
+*/		
 	    public function loadUserModel($id)
 	    {
 	        $model = User::model()->findByPk($id);
-//	        if(($model === null) || empty($model))
-//	            throw new CHttpException(404, "Couldn't complete the operation!");
 	        return $model;
 	    }
 		
-		public function getAllRoles()
+/*		public function getAllRoles()
 		{
 	        $model = Role::model()->getAllRoles();
 	        if($model === null)
 	            throw new CHttpException(404, "Couldn't complete the operation!");
 	        return $model->data;
 		}	
-		
+*/		
 		public function actiondeleteUser($id)
 		{
 			// we only allow deletion via POST request
@@ -215,6 +192,5 @@
 	        else
 	            throw new CHttpException(400, 'Invalid request. Please do not repeat this request again.');
 		}
-		
 	}
 ?>

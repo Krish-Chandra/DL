@@ -2,14 +2,14 @@
 	class BookController extends Controller
 	{
 		public $formId = 'books-form';
-		public function accessRules()
+/*		public function accessRules()
 		{
 	
 			return array(
 							array('allow', 'roles' => array('admin', 'supervisor', 'Assistant Librarian')),
 							array('deny', 'users' => array('*')),
 						);
-		}
+		}*/
 	
 		public function actionIndex()
 		{
@@ -33,11 +33,11 @@
 				
 		}
 		
-		public function filters()
+/*		public function filters()
 		{
 			return array('accessControl');
 		}
-		
+*/		
 	    public function actionCreateBook()
 	    {
 	        $model = new Book();
@@ -247,6 +247,33 @@
 	        return $model;
 		}	
 		
+		public function actionSearch()
+		{
+			$cache = Yii::app()->cache;
+			if (isset($_POST['sFilter']))
+			{
+				$searchBy = $_POST['sFilter'];
+				$searchText = $_POST['sTitle'];
+				$cache['sFilter'] = $searchBy;
+				$cache['sTitle'] = $searchText;
+			}
+			else
+			{
+				$searchBy = $cache['sFilter'];
+				$searchText = $cache['sTitle'];
+			}
+				
+				
+				
+			if (isset($searchText) && !empty($searchText))
+			{
+				$model = Book::model();
+				$dataProvider = $model->searchBooks($searchBy, $searchText);
+		        $this->render('index', array('dataProvider' => $dataProvider, 'canAddNewBook' => false));
+			}
+			else
+				$this->render('index');
+		}	
 		
 	}
 ?>

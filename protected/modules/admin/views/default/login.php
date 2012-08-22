@@ -45,4 +45,8 @@
 
 
 <?php $this->endWidget(); ?>
+<!-- Don't want to show the search box in login view -->
+<script language=javascript type='text/javascript'> 
+	document.getElementById('searchBox').style.visibility = 'hidden'; 
+</script>
 </div><!-- form -->

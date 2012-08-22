@@ -2,14 +2,6 @@
 	class MemberController extends Controller
 	{
 		public $formId = 'members-form';
-		public function accessRules()
-		{
-			//Only admin users can access library Members area	
-			return array(
-							array('allow', 'roles' => array('admin')),
-							array('deny', 'users' => array('*')),
-						);
-		}
 	
 		public function actionIndex()
 		{
@@ -25,10 +17,6 @@
 				
 		}
 		
-		public function filters()
-		{
-			return array('accessControl');
-		}
 
 	    public function actionupdateMember($id)
 	    {

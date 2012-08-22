@@ -15,7 +15,7 @@
 			elseif ($grid->id == 'rolesGrid')
 			{
 				//'admin' and 'supervisor' roles can't be deleted
-	            if((strcasecmp($data->rolename, 'admin') == 0) || (strcasecmp($data->rolename, 'supervisor') == 0)) 
+	            if((strcasecmp($data->name, 'admin') == 0) || (strcasecmp($data->name, 'supervisor') == 0)) 
 					$this->template = ""; //Easy way is to change the column template
 				else
 					$this->template = "{update} {delete}"; //Set the template otherwise

@@ -3,14 +3,6 @@
 	{
 		public $formId = 'publishers-form';
 		
-		public function accessRules()
-		{
-	
-			return array(
-							array('allow','roles' => array('admin', 'supervisor')),
-							array('deny','users' => array('*')),
-						);
-		}
 	
 		public function actionIndex()
 		{
@@ -27,10 +19,6 @@
 				
 		}
 		
-		public function filters()
-		{
-			return array('accessControl');
-		}
 		
 	    public function actionCreatePublisher()
 	    {

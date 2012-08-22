@@ -1,16 +1,18 @@
 <?php
-class DefaultController extends Controller
+class DefaultController extends CController
 {
 
 	public function accessRules()
-	{
-		//Only loggedin members can checkout books
-		return array(
-						array('allow', 'actions' => array('checkout'), 'roles' => array('members')),
-						array('deny', 'actions' => array('checkout'), 'users' => array('*')),						
-					);
-	}
-
+    {
+        return array
+		(
+            array
+			(
+				'deny', 'actions' => array('Checkout'), 'users'=>array('?'),
+            ),
+        );
+    }
+	
 	public function actions()
 	{
 		return array
@@ -20,10 +22,6 @@ class DefaultController extends Controller
 		);
 	}
 
-	public function filters()
-	{
-		return array('accessControl');
-	}
 	
 	public function getActionParams()
 	{
@@ -200,7 +198,8 @@ class DefaultController extends Controller
 				if($model->validate() && $model->register())
 				{
 					Yii::app()->user->setFlash('message', "Registration succeeded!");	
-					$this->redirect(Yii::app()->user->returnUrl);
+//					$this->redirect(Yii::app()->user->returnUrl);
+					$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
 				}
 			}
 			catch (Exception $ex)
@@ -225,7 +224,8 @@ class DefaultController extends Controller
 			$model->attributes = $_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
-				$this->redirect(Yii::app()->user->returnUrl);
+//				$this->redirect(Yii::app()->user->returnUrl);
+				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
 		}
 		// display the login form
 		$this->render('login', array('model' => $model));
@@ -263,5 +263,63 @@ class DefaultController extends Controller
 		$this->render('contact', array('model' => $model));
 	}
 	
+	public function actionSearch()
+	{
+/*		$cache = Yii::app()->cache;
+		if (isset($_POST['sFilter']))
+			$searchBy = $_POST['sFilter'];
+			
+		$searchBy = $_POST['sFilter'];
+		$searchText = $_POST['sTitle'];
+		if (isset($searchText) && !empty($searchText))
+		{
+			$model = Book::model();
+			$dataProvider = $model->searchBooks($searchBy, $searchText);
+	        $this->render('index', array('dataProvider' => $dataProvider));
+		}
+		else
+			$this->redirect('index');
+*/
+		$cache = Yii::app()->cache;
+		if (isset($_POST['sFilter']))
+		{
+			$searchBy = $_POST['sFilter'];
+			$searchText = $_POST['sTitle'];
+			$cache['sFilter'] = $searchBy;
+			$cache['sTitle'] = $searchText;
+		}
+		else
+		{
+			$searchBy = $cache['sFilter'];
+			$searchText = $cache['sTitle'];
+		}
+			
+			
+			
+		if (isset($searchText) && !empty($searchText))
+		{
+			$model = Book::model();
+			$dataProvider = $model->searchBooks($searchBy, $searchText);
+	        $this->render('index', array('dataProvider' => $dataProvider));
+		}
+		else
+			$this->render('index');
+			
+	}	
+	
+	public function filters()
+    {
+        return array('accessControl');
+    }	
+	
+	protected function performAjaxValidation($model, $id)
+	{
+	    if(isset($_POST['ajax']) && $_POST['ajax'] === $id)
+	    {
+	        echo CActiveForm::validate($model);
+	        Yii::app()->end();
+	    }
+	}
+
 }
 ?>

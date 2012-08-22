@@ -19,73 +19,92 @@
 	    <div class="container box">
 	        <div id="header" class="span-24">
 <?php
+			$searchUrl = "library/default/search";
+			if ((strcasecmp($this->module->name, "admin") == 0) || (strcasecmp(Yii::app()->controller->module->name, "srbac") == 0))
+				$searchUrl = "admin/Book/search";
 			if ($this->beginCache("header", array('duration'=>Yii::app()->params['cacheDuration'])))
 			{
 ?>			
-				<div class="span-24">
+				<div class="span-9">
 		            <img class="left" alt="Library" src="<?php echo Yii::app()->request->baseUrl; ?>/images/library-icon.png" />
 		            <h1>DIGITAL LIBRARY</h1>
 				</div>	
+				<div id="searchBox" class="push-9 span-5" style="padding-top:10px;">
+					<form action='<?php echo Yii::app()->createUrl("$searchUrl");?>' method="Post" id="search-form">
+						<div style="float:left">
+							<select id="SearchFilter" name="sFilter" style="margin-right:5px;"	>
+								<option value="Title">Title</option>
+								<option value="Author">Author</option>								
+							</select>
+						</div>
+						<div class="form-item">
+							<input type="text" id="SearchTitle" name="sTitle" >
+							<button id="search-submit" name="search"></button>
+						</div>							
+					</form>
+				</div>
 <?php	
 				$this->endCache();
 			}				
 			
 			/* $this in a view refers to the active controller */
-			if (strcasecmp($this->module->name, "admin") == 0)
+			if ((strcasecmp($this->module->name, "admin") == 0) || (strcasecmp($this->module->name, "srbac") == 0))
 			{
 				if (!Yii::app()->user->isGuest)
 				{
 					//If the logged in user belongs to the admin role
 					$authManager = Yii::app()->authManager;
-					$roles = $authManager->getRoles(Yii::app()->user->id);
-					if (array_key_exists("admin", array_change_key_case($roles)))
-//					if (array_key_exists("admin", $roles))
+					//Get an array of Roles directly assigned to the user in the assignment table
+					$roles = Helper::getUserAssignedRoles(Yii::app()->user->id); 
+					$permissions = array();
+					foreach($roles as $role)
+					{
+						$roleName = $role['name'];
+						$perforRole = CDLHelper::getPermissionsArray($roleName);   //Get the tasks assigned to each role for the authitemchild table
+						$permissions = array_merge($permissions, $perforRole);
+					}
+					
+					if (sizeof($permissions > 0))
 					{
 						if ($this->beginCache("admin_menu", array('duration'=>Yii::app()->params['cacheDuration'])))
 						{
-					
-?>				
+?>
+				
 						<div id="navigation" class="span-21">
 							<ul>
-								<li><a href="<?php echo Yii::app()->createUrl('admin/book');?>"><span>Books</span></a></li>
-								<li><a href="<?php echo Yii::app()->createUrl('admin/author');?>"><span>Authors</span></a></li>					
-								<li><a href="<?php echo Yii::app()->createUrl('admin/category');?>"><span>Categories</span></a></li>
-								<li><a href="<?php echo Yii::app()->createUrl('admin/issue');?>"><span>Issues</span></a></li>
-								<li><a href="<?php echo Yii::app()->createUrl('admin/publisher');?>"><span>Publishers</span></a></li>					
-								<li><a href="<?php echo Yii::app()->createUrl('admin/request');?>"><span>Requests</span></a></li>					
-								<li><a href="<?php echo Yii::app()->createUrl('admin/user');?>"><span>Admin Users</span></a></li>
-								<li><a href="<?php echo Yii::app()->createUrl('admin/member');?>"><span>Members</span></a></li>							
-								<li><a href="<?php echo Yii::app()->createUrl('admin/role');?>"><span>Roles</span></a></li>							
+<?php
+							foreach($permissions as $key => $value)
+							{
+								$module = "admin/";
+								$linkText = $value;
+								switch($value)
+								{
+									case "Rbac":
+										$module = "srbac/";
+										$value = "";
+									break;
+									case "Category":
+										$linkText = "Categories";
+									break;
+									case "AdminUser":
+										$value = "User";
+									default:
+										$linkText .= "s";
+								}
+?>								
+								<li><a href="<?php echo Yii::app()->createUrl($module. $value);?>"><span><?php echo $linkText; ?></span></a></li>
+<?php								
+							}
+?>							
 							</ul>
 							
 						</div>
-
 <?php
 						$this->endCache();
 						}
 					}
-					elseif (array_key_exists("supervisor", array_change_key_case($roles)))					
-					//elseif (array_key_exists("supervisor", $roles))  //If (s)he belongs to the supervisor role, allow only restricted access
+					if ($this->beginCache("login_menu", array('duration'=>Yii::app()->params['cacheDuration'])))
 					{
-						if ($this->beginCache("supervisor_menu", array('duration'=>Yii::app()->params['cacheDuration'])))
-						{
-					
-?>					
-						<div id="navigation" class="span-21">
-							<ul>
-								<li><a href="<?php echo Yii::app()->createUrl('admin/book');?>"><span>Books</span></a></li>
-								<li><a href="<?php echo Yii::app()->createUrl('admin/author');?>"><span>Authors</span></a></li>					
-								<li><a href="<?php echo Yii::app()->createUrl('admin/category');?>"><span>Categories</span></a></li>
-								<li><a href="<?php echo Yii::app()->createUrl('admin/publisher');?>"><span>Publishers</span></a></li>					
-							</ul>
-						</div>
-<?php
-						$this->endCache();
-						}
-
-					}
-						if ($this->beginCache("login_menu", array('duration'=>Yii::app()->params['cacheDuration'])))
-						{
 					
 ?>					
 					<div id="navigation" class="span-1">
@@ -96,18 +115,17 @@
 					
 <?php
 						$this->endCache();
-						}
+					}
 
 				}
 ?>
-			
 <?php				
 			}
 			elseif (strcasecmp($this->module->name, "library") == 0) //User is accessing the public-facing module
 			{
 				if (Yii::app()->user->isGuest) //hasn't logged in yet
 				{
-?>
+?>					
 					<div id="navigation" class="span-21">
 						<ul>
 							<li><a href="<?php echo Yii::app()->createUrl('library/default/index');?>"><span>Home</span></a></li>
@@ -175,7 +193,6 @@
 <?php
 			if ($this->beginCache("footer", array('duration'=>Yii::app()->params['cacheDuration'])))
 			{
-				
 ?>			
 				<div id="footer" class="span-24">
 				    <div class="span-5 push-1">

@@ -25,12 +25,6 @@
 	        <?php echo $form->textField($model, 'email_id', array('size' => 60, 'maxlength' => 100)); ?>
 	        <?php echo $form->error($model, 'email_id'); ?>
 		</div>
-		<div>
-	        <?php echo $form->labelEx($model, 'role_id', array('class' => 'label')); ?>
-			<br />
-	        <?php echo CHtml::dropDownList('User[role_id]', $model->role_id, $roles); ?> 
-	        <?php echo $form->error($model,'role_id'); ?>
-		</div>
 		
 		<div class="row rememberMe">
 			<?php echo $form->label($model,'active'); ?>			

@@ -1,8 +1,12 @@
 <?php
 	class DefaultController extends Controller
 	{
+		public function actionIndex()
+		{
+			$this->render('index');
+		}
 	
-		public function actionRegister()
+/*		public function actionRegister()
 		{
 			$model = new RegisterForm;
 		
@@ -25,6 +29,7 @@
 			$this->render('register', array('model' => $model));
 			
 		}
+*/		
 		/**
 		 * Displays the login page
 		 */
@@ -46,7 +51,7 @@
 				// validate user input and redirect to the previous page if valid
 				if($model->validate() && $model->login())
 				{
-					$this->redirect(Yii::app()->createUrl('admin/book'));
+					$this->redirect(Yii::app()->createUrl('admin/default'));
 				}
 					
 			}
@@ -60,6 +65,7 @@
 		public function actionLogout()
 		{
 			Yii::app()->user->logout();
+			Yii::app()->cache->flush();
 			$this->redirect(Yii::app()->getModule('admin')->homeUrl);
 		}
 		
@@ -74,5 +80,17 @@
 		        	$this->render('error', array('error' => $error));
 		    }
 		}
+/*
+		public function accessRules()
+        {
+            return array(array('allow', 'actions'=>array('Login'), 'users'=>array('*')));
+        }		
+
+		public function filters()
+		{
+			return array('accessControl');
+		} */
+        
 	}
+	
 ?>

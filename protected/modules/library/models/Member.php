@@ -52,18 +52,6 @@ class Member extends CActiveRecord
 		return $str;
 	}
 
-	/**
-	 * @return array relational rules.
-	 */
-	public function relations()
-	{
-		// NOTE: you may need to adjust the relation name and the related
-		// class name for the relations automatically generated below.
-		return array
-		(
-			'role' => array(self::BELONGS_TO, 'Role', 'role_id'),
-		); 
-	}
 
 	/**
 	 * @return array customized attribute labels (name=>label)

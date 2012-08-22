@@ -3,7 +3,7 @@
 	{
 		public $formId = 'authors-form';
 		
-		public function accessRules()
+/*		public function accessRules()
 		{
 	
 			return array(
@@ -11,7 +11,7 @@
 							array('deny','users' => array('*')),
 						);
 		}
-	
+*/	
 		public function actionIndex()
 		{
 	        $dataProvider = Author::model()->getAllAuthors();

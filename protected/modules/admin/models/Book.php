@@ -162,4 +162,25 @@ class Book extends CActiveRecord
           return array( 'CAdvancedArBehavior' => array(
          	 'class' => 'application.extensions.CAdvancedArBehavior')); 
  	}	
-}
+	public function searchBooks($searchBy, $searchText)
+	{
+		$criteria = new CDbCriteria;
+		if (strcasecmp($searchBy, "Title") == 0)
+		{
+			$criteria->condition = 'title like :title';
+			$criteria->params = array(':title' => "%$searchText%");
+			return new CActiveDataProvider($this, array('criteria' => $criteria));
+		}
+		else
+		{
+			$criteria->with = array('authors' => 
+										array(
+												'joinType' => 'INNER JOIN',
+									            'condition'=> 'authorname LIKE :name',
+												'params' => array(':name' => "%$searchText%")
+											)
+									);
+			return new CActiveDataProvider($this, array('criteria' => $criteria, 'pagination' => array('pageSize' => 25)));
+		}
+	}
+} 	

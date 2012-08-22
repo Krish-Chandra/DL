@@ -33,7 +33,7 @@ class User extends CActiveRecord
 		// will receive user inputs.
 		return array
 		(
-			array('username, password, email_id, role_id', 'required'),
+			array('username, password, email_id', 'required'),
 			array('username', 'unique', 'message' => 'The entered User has already been added!'),
 			array('username', 'length', 'max' => 100),
 			array('active', 'boolean')
@@ -45,12 +45,22 @@ class User extends CActiveRecord
 	{
 		//set the following fields if and only if the record(user) is getting added 
 		//Not when it's getting updated
-		if (!isset($this->id) && $this->id == NULL)
+		if ($this->isNewRecord)
+		//if (!isset($this->id) && $this->id == NULL)		
 		{
 			$this->created_on = date("y/m/d");
 			$this->password = $this->hashUserPassword();
 		}
 	}
+
+	protected function afterSave()
+	{
+		if ($this->isNewRecord)
+		{
+			Yii::app()->authManager->assign("AdminDefault", $this->id);
+		}
+	}
+	
 
 	private function hashUserPassword($isPassword=true)
 	{
@@ -69,7 +79,7 @@ class User extends CActiveRecord
 	/**
 	 * @return array relational rules.
 	 */
-	public function relations()
+/*	public function relations()
 	{
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
@@ -78,7 +88,7 @@ class User extends CActiveRecord
 			'role' => array(self::BELONGS_TO, 'Role', 'role_id'),
 		); 
 	}
-
+*/
 	/**
 	 * @return array customized attribute labels (name=>label)
 	 */
@@ -91,7 +101,6 @@ class User extends CActiveRecord
 			'email_id' => 'Email ID',
 			'created_on' => 'Created On',
 			'active' => 'Is active?',
-			'role_id' =>'Role',
 		); 
 	}
 
@@ -117,12 +126,7 @@ class User extends CActiveRecord
 	{
 		return $username;
 	}
-	
-	public function usersInRole($id)
-	{
-		$dataProvider = new CActiveDataProvider('User', array('criteria' => array('condition' => "role_id={$id}")));		
-		return $dataProvider;
-	}
+
 	
 	public function beforeSave()
 	{

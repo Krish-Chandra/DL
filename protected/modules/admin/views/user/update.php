@@ -6,7 +6,7 @@
 	<div class="large box-head"><strong>Edit Admin User</strong></div>
 <?php 
 	$form = $this->beginWidget('CActiveForm', array('id' => $formId, 'enableAjaxValidation' => true, 'enableClientValidation' => true,
-								'focus' => array($model, 'role_id'), 'errorMessageCssClass' => 'errorMsg'));
+								'errorMessageCssClass' => 'errorMsg'));
 ?>
 
     	<!--<?php echo $form->errorSummary($model); ?> -->
@@ -25,11 +25,6 @@
 	        <?php echo $form->labelEx($model, 'email_id', array('class' => 'label')); ?>
 			<br />
 	        <?php echo $form->textField($model, 'email_id', array('size' => 60, 'maxlength' => 100, 'disabled' => 'disabled')); ?>
-		</div>
-		<div>
-	        <?php echo $form->labelEx($model, 'role_id', array('class' => 'label')); ?>
-			<br />
-	        <?php echo CHtml::dropDownList('User[role_id]', $model->role_id, $roles, array('disabled' => "{$model->username}" == 'administrator' ? TRUE : FALSE)); ?> 
 		</div>
 		
 		<div class="row rememberMe">
