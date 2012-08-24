@@ -102,6 +102,7 @@ return array(
 			'username' => 'root',
 			'password' => '',
 			'charset' => 'utf8',
+			'schemaCachingDuration' => '36000',
 		),
 		
 		'errorHandler'=>array

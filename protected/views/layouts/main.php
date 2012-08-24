@@ -63,7 +63,7 @@
 						$perforRole = CDLHelper::getPermissionsArray($roleName);   //Get the tasks assigned to each role for the authitemchild table
 						$permissions = array_merge($permissions, $perforRole);
 					}
-					
+					asort($permissions);
 					if (sizeof($permissions > 0))
 					{
 						if ($this->beginCache("admin_menu", array('duration'=>Yii::app()->params['cacheDuration'])))

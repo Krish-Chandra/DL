@@ -16,7 +16,7 @@
 		            $type = '';
 		            if ($child->type == 1)
 					{
-						$retArray[] =  $child->name;
+						$retArray[$child->name] =  $child->name;
 					}
 					else
 					{
