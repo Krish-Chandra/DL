@@ -22,21 +22,6 @@ class m120824_131051_Upgrade_db_for_Caching_and_Many_Many_Relations extends CDbM
 			$category[$bookId]	= $categoryId;
 		}
 
-		foreach($author as $bookId => $authorId)		
-		{
-			$cmd->setText("INSRERT INTO book_author (book_id, author_id) VALUES (:bId, :aId)");
-			$command->bindParam(":bId", $bookId, PDO::PARAM_INT);
-			$command->bindParam(":aId", $authorId, PDO::PARAM_INT);				
-			$command->execute();
-		}
-		
-		foreach($category as $bookId => $categoryId)
-		{
-			$cmd->setText("INSRERT INTO book_category (book_id, category_id) VALUES (:bId, :cId)");
-			$command->bindParam(":bId", $bookId, PDO::PARAM_INT);
-			$command->bindParam(":cId", $categoryId, PDO::PARAM_INT);				
-			$command->execute();
-		}
 			
 		$this->dropForeignKey('FK_book_author',		'book');
 		$this->dropForeignKey('FK_book_category',	'book');		
@@ -84,6 +69,21 @@ class m120824_131051_Upgrade_db_for_Caching_and_Many_Many_Relations extends CDbM
 								)
 							);
 							
+		foreach($author as $bookId => $authorId)		
+		{
+			$cmd->setText("INSRERT INTO book_author (book_id, author_id) VALUES (:bId, :aId)");
+			$cmd->bindParam(":bId", $bookId, PDO::PARAM_INT);
+			$cmd->bindParam(":aId", intval($authorId), PDO::PARAM_INT);				
+			$cmd->execute();
+		}
+		
+		foreach($category as $bookId => $categoryId)
+		{
+			$cmd->setText("INSRERT INTO book_category (book_id, category_id) VALUES (:bId, :cId)");
+			$cmd->bindParam(":bId", $bookId, PDO::PARAM_INT);
+			$cmd->bindParam(":cId", intval($categoryId), PDO::PARAM_INT);				
+			$cmd->execute();
+		}
 	}
 
 
