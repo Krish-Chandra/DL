@@ -71,8 +71,9 @@ class m120824_131051_Upgrade_db_for_Caching_and_Many_Many_Relations extends CDbM
 							
 		foreach($author as $bookId => $authorId)		
 		{
+			$conn = Yii::app()->db;		
+			$cmd = $conn->createCommand("INSRERT INTO book_author (book_id, author_id) VALUES (:bId, :aId)");				
 			$aId = intval($authorId);
-			$cmd->setText("INSRERT INTO book_author (book_id, author_id) VALUES (:bId, :aId)");
 			$cmd->bindParam(":bId", $bookId, PDO::PARAM_INT);
 			$cmd->bindParam(":aId", $aId, PDO::PARAM_INT);				
 			$cmd->execute();
@@ -80,8 +81,10 @@ class m120824_131051_Upgrade_db_for_Caching_and_Many_Many_Relations extends CDbM
 		
 		foreach($category as $bookId => $categoryId)
 		{
+			$conn = Yii::app()->db;		
+			$cmd = $conn->createCommand("INSRERT INTO book_category (book_id, category_id) VALUES (:bId, :cId)");				
+		
 			$cId = intval($categoryId);
-			$cmd->setText("INSRERT INTO book_category (book_id, category_id) VALUES (:bId, :cId)");
 			$cmd->bindParam(":bId", $bookId, PDO::PARAM_INT);
 			$cmd->bindParam(":cId", $cId, PDO::PARAM_INT);				
 			$cmd->execute();
