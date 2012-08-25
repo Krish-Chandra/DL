@@ -198,8 +198,8 @@ class DefaultController extends CController
 				if($model->validate() && $model->register())
 				{
 					Yii::app()->user->setFlash('message', "Registration succeeded!");	
-//					$this->redirect(Yii::app()->user->returnUrl);
-					$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
+					$this->redirect(Yii::app()->user->returnUrl);
+//					$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
 				}
 			}
 			catch (Exception $ex)
@@ -224,8 +224,8 @@ class DefaultController extends CController
 			$model->attributes = $_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
-//				$this->redirect(Yii::app()->user->returnUrl);
-				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
+				$this->redirect(Yii::app()->user->returnUrl);
+//				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
 		}
 		// display the login form
 		$this->render('login', array('model' => $model));

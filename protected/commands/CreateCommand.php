@@ -81,11 +81,12 @@
 			$Authors->addChild('admin@AuthorUpdateAuthor');
 			$Authors->addChild('admin@AuthorDeleteAuthor');
 
-			$Books = $authMgr->createTask('Book', 'Manage(Add/update/delete) Books in the Library');
+			$Books = $authMgr->createTask('Book', 'Manage(Add/update/delete/search) Books in the Library');
 			$Books->addChild('admin@BookIndex');
 			$Books->addChild('admin@BookCreateBook');
 			$Books->addChild('admin@BookUpdateBook');
 			$Books->addChild('admin@BookdeleteBook');
+			$Books->addChild('admin@BookSearch');
 			
 			$Cats = $authMgr->createTask('Category', 'Manage(Add/update/delete) Categories');
 			$Cats->addChild('admin@CategoryIndex');
@@ -121,7 +122,6 @@
 			$asstRole->addChild('Book');
 			$asstRole->addChild('Category');
 			$asstRole->addChild('Publisher');
-			$asstRole->addChild('admin@BookSearch');			
 			
 			//admin role is omnipotent
 			//Add all the tasks to it
