@@ -9,6 +9,35 @@ class m120824_131051_Upgrade_db_for_Caching_and_Many_Many_Relations extends CDbM
 	// caching and many-to-many relations between book and author/category enabled
 	public function safeUp()
 	{
+		$conn = Yii::app()->db;		
+		$sql = "SELECT id, author_id, category_id  FROM book";
+		$cmd = $conn->createCommand($sql);				
+		$reader = $cmd->query();
+		$reader->bindColumn(1, $bookId);
+		$reader->bindColumn(2, $authorId);		
+		$reader->bindColumn(3, $categoryId);
+		while($reader->read())
+		{
+			$author[$bookId]	= $authorId;
+			$category[$bookId]	= $categoryId;
+		}
+
+		foreach($author as $bookId => $authorId)		
+		{
+			$cmd->setText("INSRERT INTO book_author (book_id, author_id) VALUES (:bId, :aId)");
+			$command->bindParam(":bId", $bookId, PDO::PARAM_INT);
+			$command->bindParam(":aId", $authorId, PDO::PARAM_INT);				
+			$command->execute();
+		}
+		
+		foreach($category as $bookId => $categoryId)
+		{
+			$cmd->setText("INSRERT INTO book_category (book_id, category_id) VALUES (:bId, :cId)");
+			$command->bindParam(":bId", $bookId, PDO::PARAM_INT);
+			$command->bindParam(":cId", $categoryId, PDO::PARAM_INT);				
+			$command->execute();
+		}
+			
 		$this->dropForeignKey('FK_book_author',		'book');
 		$this->dropForeignKey('FK_book_category',	'book');		
 	
