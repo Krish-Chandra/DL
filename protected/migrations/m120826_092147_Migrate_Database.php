@@ -24,10 +24,12 @@ class m120826_092147_Migrate_Database extends CDbMigration
 	public function safeUp()
 	{
 
-		$this->dropForeignKey('FK_admin_user_role', 'admin_user');
+		//Though the role table is not used in Version 3 of the app, it's required for the earlier versions
+		//Leave it alone
+/*		$this->dropForeignKey('FK_admin_user_role', 'admin_user');
 		$this->dropIndex('FK_admin_user_role',	'admin_user');
 		$this->dropTable('role');
-		
+*/		
 		$this->createTable('authitem',
 								array
 								(
