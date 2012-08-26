@@ -17,12 +17,12 @@
 //			2. Your DB schema belongs to Vesion 1 (master)
 //
 // 
-// 	Since this version supports Many_Many relations, the author_id and category_id columns in book table are no longer useful. Now there are 2
+// 	Since this version supports Many_Many relations, the author_id and category_id columns in the book table are no longer useful. Now there are 2
 //	junction tables - one for book/author and the other for book/category. 
 //
 //	The function does the following:
-//	1. Reads the values of these 2 columns from the book 
-//	2. Dros those 2 columns from the book table
+//	1. Reads the values of these 2 columns from the book table 
+//	2. Drops those 2 columns from the book table
 //	3. Creates 2 junction tables
 //	4. Inserts values obtained in step 1 into the appropriate tables
 //
