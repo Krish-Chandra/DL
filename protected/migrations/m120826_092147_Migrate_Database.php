@@ -19,7 +19,7 @@
 //	1. Creates the 3 tables required for Yii RBAC
 //
 
-class m120825_112426_upgrade_db_for_Yii_RBAC extends CDbMigration
+class m120826_092147_Migrate_Database extends CDbMigration
 {
 	public function safeUp()
 	{
