@@ -1,12 +1,33 @@
 <?php
-
+//
+// There are 3 versions of the DL app corresponding to the 3 branches of the app in Git
+// Version 1(master branch): Allows a book to have only one author and category each. No caching is supported 
+// Version 2('Caching-and-Many-Many-relations' branch):
+//	- Allows a book to have a maximum of 3 authors and categories each
+//	- Caching is enabled
+// Version 3
+//	- Uses Yii's RBAC for access control
+//  - The app's Role component is not used to manage roles
+//
+// Each version has a different database schema
+// This version of (Version 2) of the app has 2 migration files
+//	- This one needs to be used when you are coming up from Version 1 (i.e., master branch)
+// 		- Type yiic migrate up 1 at the command prompt to make the DB schema to be in sync with this version, provided:
+//			1. You have checked out Version 2 ('Caching-and-Many-Many-relations') version of the app
+//			2. Your DB schema belongs to Vesion 1 (master)
+//
+// 
+// 	Since this version supports Many_Many relations, the author_id and category_id columns in book table are no longer useful. Now there are 2
+//	junction tables - one for book/author and the other for book/category. 
+//
+//	The function does the following:
+//	1. Reads the values of these 2 columns from the book 
+//	2. Dros those 2 columns from the book table
+//	3. Creates 2 junction tables
+//	4. Inserts values obtained in step 1 into the appropriate tables
+//
 class m120826_060739_Migrate_Database extends CDbMigration
 {
-
-	// Use safeUp/safeDown to do migration with transaction
-	// Run the yiic migrate command at the command prompt to run this safeUp function
-	// This function needs to be called when you have the basic digital_library database (the database setup in the master branch) and want to have
-	// caching and many-to-many relations between book and author/category enabled
 
 
 	public function safeUp()
