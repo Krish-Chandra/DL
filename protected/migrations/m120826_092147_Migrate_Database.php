@@ -1,11 +1,26 @@
 <?php
+//
+// There are 3 versions of the DL app corresponding to the 3 branches of the app in Git
+// Version 1(master branch): Allows a book to have only one author and category each. No caching is supported 
+// Version 2('Caching-and-Many-Many-relations' branch):
+//	- Allows a book to have a maximum of 3 authors and categories each
+//	- Caching is enabled
+// Version 3
+//	- Uses Yii's RBAC for access control
+//  - The app's Role component is not used to manage roles
+//
+// Each version has a different database schema
+//	- This one needs to be used when you are coming up from Version 2 (i.e., 'Caching-and-Many-Many-relations' branch)
+// 		- Type yiic migrate up  at the command prompt to make the DB schema to be in sync with this version, provided:
+//			1. You have checked out Version 3 ('Use-Yii-RBAC') version of the app
+//			2. Your DB schema belongs to Vesion 2 
+//
+//	The function does the following:
+//	1. Creates the 3 tables required for Yii RBAC
+//
 
 class m120825_112426_upgrade_db_for_Yii_RBAC extends CDbMigration
 {
-	// Use safeUp/safeDown to do migration with transaction
-	// Run the yiic migrate command at the command prompt to run this safeUp function
-	// This function needs to be called when you have the basic digital_library database (the database setup in the master branch) and want to have
-	// Yii RBAC to manage admin users' roles and permissions
 	public function safeUp()
 	{
 
