@@ -99,7 +99,7 @@ class User extends CActiveRecord
 			'username' => 'User Name',
 			'password' => 'Password',
 			'email_id' => 'Email ID',
-			'created_on' => 'Created On',
+//			'created_on' => 'Created On',
 			'active' => 'Is active?',
 		); 
 	}
@@ -131,6 +131,7 @@ class User extends CActiveRecord
 	public function beforeSave()
 	{
 		$this->update_time = new CDbExpression('NOW()'); //date("Y-m-d H:i:s");				 
+		$this->role_id = Role::getRoleIdByName('AdminDefault');
 	    return parent::beforeSave();
 	}	
 }

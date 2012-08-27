@@ -16,7 +16,11 @@
 //			2. Your DB schema belongs to Vesion 2 
 //
 //	The function does the following:
-//	1. Creates the 3 tables required for Yii RBAC
+//	1. Inserts an 'AdminDefault' role into the Role table
+//		By default, any admin user added to the system using this version of the app is assigned to the AdminDefault role - the least privileged role in the system
+//		Even though this version of the app doesn't use the role table, the admin_user table's roleId still refers to it. In order for an admin user to be 
+//		successfully added to the system, AdminDefault role has to be added to the role table
+//	2. Creates the 3 tables required for Yii RBAC
 //
 
 class m120826_092147_Migrate_Database extends CDbMigration
@@ -26,10 +30,7 @@ class m120826_092147_Migrate_Database extends CDbMigration
 
 		//Though the role table is not used in Version 3 of the app, it's required for the earlier versions
 		//Leave it alone
-/*		$this->dropForeignKey('FK_admin_user_role', 'admin_user');
-		$this->dropIndex('FK_admin_user_role',	'admin_user');
-		$this->dropTable('role');
-*/		
+		$this->insert('role', array('rolename' => 'AdminDefault', 'description' => 'The least privileged role in this version of the app. They have access only to the landing page of the admin module!'));
 		$this->createTable('authitem',
 								array
 								(
