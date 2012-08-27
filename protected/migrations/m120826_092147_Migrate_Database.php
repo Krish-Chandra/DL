@@ -1,24 +1,29 @@
 <?php
 //
 // There are 3 versions of the DL app corresponding to the 3 branches of the app in Git
-// Version 1(master branch): Allows a book to have only one author and category each. No caching is supported 
+// Version 1(master branch):
+//	- Uses PHP script file for authorization data and access control filters for RBAC
+//	- Allows a book to have only one author and category each.
+//	- No support for caching
 // Version 2('Caching-and-Many-Many-relations' branch):
+//	- Uses PHP script file for authorization data and access control filters for RBAC
 //	- Allows a book to have a maximum of 3 authors and categories each
 //	- Caching is enabled
-// Version 3
+// Version 3('Use-Yii-RBAC'):
 //	- Uses Yii's RBAC for access control
-//  - The app's Role component is not used to manage roles
+//	- Allows the books catalog to be searched based on title or author
+//  - Doesn't use the role table. It's there only to make the database backwards compatible
 //
 // Each version has a different database schema
 //	- This one needs to be used when you are coming up from Version 2 (i.e., 'Caching-and-Many-Many-relations' branch)
-// 		- Type yiic migrate up  at the command prompt to make the DB schema to be in sync with this version, provided:
+// 		- Type yiic migrate at the command prompt to make the DB schema to be in sync with this version, provided:
 //			1. You have checked out Version 3 ('Use-Yii-RBAC') version of the app
-//			2. Your DB schema belongs to Vesion 2 
+//			2. Your DB schema belongs to Version 2 
 //
 //	The function does the following:
 //	1. Inserts an 'AdminDefault' role into the Role table
 //		By default, any admin user added to the system using this version of the app is assigned to the AdminDefault role - the least privileged role in the system
-//		Even though this version of the app doesn't use the role table, the admin_user table's roleId still refers to it. In order for an admin user to be 
+//		Even though this version of the app doesn't use the role table, the admin_user table's role_id still refers to it. In order for an admin user to be 
 //		successfully added to the system, AdminDefault role has to be added to the role table
 //	2. Creates the 3 tables required for Yii RBAC
 //
@@ -28,9 +33,8 @@ class m120826_092147_Migrate_Database extends CDbMigration
 	public function safeUp()
 	{
 
-		//Though the role table is not used in Version 3 of the app, it's required for the earlier versions
-		//Leave it alone
-		$this->insert('role', array('rolename' => 'AdminDefault', 'description' => 'The least privileged role in this version of the app. They have access only to the landing page of the admin module!'));
+		//Add the AdminDefault role to the role table
+		$this->insert('role', array('rolename' => 'AdminDefault', 'description' => 'The least privileged role in this version of the app. Admin users belonging to this RBAC role have access only to the landing page of the admin module!'));
 		$this->createTable('authitem',
 								array
 								(

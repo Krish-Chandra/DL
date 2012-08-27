@@ -22,16 +22,19 @@ CREATE TABLE IF NOT EXISTS `admin_user` (
   `password` varchar(40) NOT NULL,
   `email_id` varchar(100) NOT NULL,
   `created_on` date NOT NULL,
+  `role_id` mediumint(10) unsigned NOT NULL,
   `active` tinyint(4) NOT NULL DEFAULT '1',
   `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+  UNIQUE KEY `username` (`username`),
+  KEY `FK_admin_user_role` (`role_id`),
+  CONSTRAINT `FK_admin_user_role` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
--- Dumping data for table digital_library.admin_user: ~4 rows (approximately)
+-- Dumping data for table digital_library.admin_user: ~1 rows (approximately)
 /*!40000 ALTER TABLE `admin_user` DISABLE KEYS */;
-INSERT INTO `admin_user` (`id`, `username`, `password`, `email_id`, `created_on`, `active`, `update_time`) VALUES
-	(1, 'administrator', '81799fa6cf5c5683ce7d57577c9e9c9e3f1435d6', 'admin@admin.com', '2012-06-27', 1, '0000-00-00 00:00:00');
+INSERT INTO `admin_user` (`id`, `username`, `password`, `email_id`, `created_on`, `role_id`, `active`, `update_time`) VALUES
+  (1, 'administrator', '81799fa6cf5c5683ce7d57577c9e9c9e3f1435d6', 'admin@admin.com', '2012-06-27', 1, 1, '0000-00-00 00:00:00');
 /*!40000 ALTER TABLE `admin_user` ENABLE KEYS */;
 
 
@@ -227,6 +230,20 @@ CREATE TABLE IF NOT EXISTS `request` (
 /*!40000 ALTER TABLE `request` DISABLE KEYS */;
 /*!40000 ALTER TABLE `request` ENABLE KEYS */;
 
+-- Dumping structure for table digital_library.role
+CREATE TABLE IF NOT EXISTS `role` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `rolename` varchar(20) NOT NULL,
+  `description` varchar(100) NOT NULL,
+  `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+-- Dumping data for table digital_library.role: ~1 rows (approximately)
+/*!40000 ALTER TABLE `role` DISABLE KEYS */;
+INSERT INTO `role` (`id`, `rolename`, `description`, `update_time`) VALUES
+  (5, 'AdminDefault', 'The least privileged role in this version of the app. They have access only to the landing page of t', '2012-08-27 14:33:37');
+/*!40000 ALTER TABLE `role` ENABLE KEYS */;
 
 -- Dumping structure for table digital_library.user
 CREATE TABLE IF NOT EXISTS `user` (
