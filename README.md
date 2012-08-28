@@ -1,7 +1,28 @@
 Digital Library is a full-fledged web application built using Yii/PHP. The main purpose of coming up with this demo app is to show newbie Yii developers how to use the various Yii features to build a meaningful web application that is different from the obligatory Blog demo that usually accompanies the frameworks.
 
+
 #About Digital Library:
 	An online book store app that has two modules: Admin (back end) and Library(front end).
+
+#Versions of the app:
+	There are 3 versions of the DL app corresponding to the 3 branches:
+	- Version 1(master branch):
+		- Uses PHP script file for authorization data and access control filters for RBAC
+		- Allows a book to have only one author and category each.
+		- Doesn't support caching
+		- Supports database migration
+	- Version 2('Caching-and-Many-Many-relations' branch):
+		- Uses PHP script file for authorization data and access control filters for RBAC
+		- Allows a book to have a maximum of 3 authors and categories each
+		- Supports caching
+		- Supports database migration
+	- Version 3('Use-Yii-RBAC' branch):
+		- Uses the database for RBAC
+			- There is an admin component for it
+		- Allows a book to have a maximum of 3 authors and categories each
+		- Supports caching
+		- Allows the books catalog to be searched based on title or author
+		- Supports database migration
 	
 ##Admin Module:
 	Is where the book store is administered
@@ -76,17 +97,20 @@ Digital Library is a full-fledged web application built using Yii/PHP. The main 
 	- Contact the administrator (needs to be tested!)
 	
 
-###Things that can be learned from studying this app:
+###Things that can be learned from studying these versions of the app:
 
 - Yii Module creation
 	- Admin and Library
 - Authentication and authorization
-	- Role based access control
+	- Role based access control (both file- and db-based)
 - Enabling and disabling of menu items based on the logged in user's role
 - Use of Yii's ORM (Active Record and Relational Active Record) for database access
 - Form input and AJAX validation
 - Button columns with images in CGridView
 - Error handling
+- Implementing search
+- Database migrations to migrate up/down from one version of the app to the next/previous
+- 
 
 ###TODO list to make it more feature rich:
 
