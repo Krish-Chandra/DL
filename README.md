@@ -110,7 +110,7 @@ Digital Library is a full-fledged web application built using Yii/PHP. The main 
 - Error handling
 - Implementing search
 - Database migrations to migrate up/down from one version of the app to the next/previous
-- 
+
 
 ###TODO list to make it more feature rich:
 
