@@ -116,17 +116,22 @@ Digital Library is a full-fledged web application built using Yii/PHP. The main 
 
 ####App specific:
 
-- Allowing multiple authors and categories for a book
+- Allowing multiple authors and categories for a book (implemented in versions 2 and 3)
 - Role-based access control is a manual process
 	- Need an interface to automate this process
+		- Version 3 implements db based RBAC using srbac extension
+		- Users of the Admin role can use the rbac component to create roles, tasks, operations and assign them to users
+			- The app will automatically display the appropriate menu items based on these assignments
+				- No need to add code in main.php view file to display various menu items
+				- No need to add access control filters in controller classes to allow/deny access to actions
 - Concurrency support
 
 ####Yii specific:
 
-- Caching 
+- Caching (implemented in versions 2 and 3)
 - Security
 - i18n
-- Search
+- Search (implemented in version 3)
 
 ####Software Requirements:
 
