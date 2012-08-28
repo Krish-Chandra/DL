@@ -1,23 +1,25 @@
 <?php
 //
+//
 // There are 3 versions of the DL app corresponding to the 3 branches of the app in Git
 // Version 1(master branch):
 //	- Uses PHP script file for authorization data and access control filters for RBAC
 //	- Allows a book to have only one author and category each.
-//	- No support for caching
+//	- Doesn't support caching
 // Version 2('Caching-and-Many-Many-relations' branch):
 //	- Uses PHP script file for authorization data and access control filters for RBAC
 //	- Allows a book to have a maximum of 3 authors and categories each
 //	- Caching is enabled
-// Version 3('Use-Yii-RBAC'):
+// Version 3('Use-Yii-RBAC' branch):
 //	- Uses Yii's RBAC for access control
 //	- Allows the books catalog to be searched based on title or author
 //  - Doesn't use the role table. It's there only to make the database backwards compatible
 //
+//
 // Each version has a different database schema
-//	- This one needs to be used when you are coming up from Version 2 (i.e., 'Caching-and-Many-Many-relations' branch)
-// 		- Type yiic migrate at the command prompt to make the DB schema to be in sync with this version, provided:
-//			1. You have checked out Version 3 ('Use-Yii-RBAC') version of the app
+//	- This one needs to be used when you are coming up from Version 2 ('Caching-and-Many-Many-relations' branch)
+// 		- To use this migration, type: yiic migrate at the command prompt to make the DB schema in sync with this version, provided:
+//			1. You have checked out Version 3 ('Use-Yii-RBAC') of the app
 //			2. Your DB schema belongs to Version 2 
 //
 //	The function does the following:
@@ -27,7 +29,7 @@
 //		successfully added to the system, AdminDefault role has to be added to the role table
 //	2. Creates the 3 tables required for Yii RBAC
 //
-
+//
 class m120826_092147_Migrate_Database extends CDbMigration
 {
 	public function safeUp()
