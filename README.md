@@ -7,7 +7,7 @@ New Features in this branch:
 	- Duration is specified in the main.php config file
 
 ####Instructions to switch to this branch:
-	- Follow the installtaion instructions mentioned in the README doc of master branch to install the app
+	- Follow the installation instructions mentioned in the README doc of master branch to install the app
 	- cd DL
 	- Run: Git checkout 'Caching-and-Many-Many-relations'
 	- There are two ways to set up the database for this branch:
