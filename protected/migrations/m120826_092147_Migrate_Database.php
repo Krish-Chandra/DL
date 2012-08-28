@@ -13,20 +13,21 @@
 // Version 3('Use-Yii-RBAC' branch):
 //	- Uses Yii's RBAC for access control
 //	- Allows the books catalog to be searched based on title or author
-//  - Doesn't use the role table. It's there only to make the database backwards compatible
+//  - Doesn't use the role table
+//		- It's there only to make the database backwards compatible
 //
 //
 // Each version has a different database schema
-//	- This one needs to be used when you are coming up from Version 2 ('Caching-and-Many-Many-relations' branch)
-// 		- To use this migration, type: yiic migrate at the command prompt to make the DB schema in sync with this version, provided:
+//	- Use this migration when you are coming up from Version 2 ('Caching-and-Many-Many-relations' branch)
+// 		- To run this migration, type: yiic migrate at the command prompt to make the DB schema in sync with this version, provided:
 //			1. You have checked out Version 3 ('Use-Yii-RBAC') of the app
 //			2. Your DB schema belongs to Version 2 
 //
 //	The function does the following:
 //	1. Inserts an 'AdminDefault' role into the Role table
 //		By default, any admin user added to the system using this version of the app is assigned to the AdminDefault role - the least privileged role in the system
-//		Even though this version of the app doesn't use the role table, the admin_user table's role_id still refers to it. In order for an admin user to be 
-//		successfully added to the system, AdminDefault role has to be added to the role table
+//		Even though this version of the app doesn't use the role table, the admin_user table's role_id still refers to it
+//		In order for an admin user to be successfully added to the system, AdminDefault role has to be added to the role table
 //	2. Creates the 3 tables required for Yii RBAC
 //
 //
