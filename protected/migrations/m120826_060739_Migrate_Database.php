@@ -4,22 +4,21 @@
 // There are 3 versions of the DL app corresponding to the 3 branches of the app in Git
 // Version 1(master branch):
 //	- Uses PHP script file for authorization data and access control filters for RBAC
-//	- Allows a book to have only one author and category each
+//	- Allows a book to have only one author and category each.
 //	- Doesn't support caching
-//
 // Version 2('Caching-and-Many-Many-relations' branch):
 //	- Uses PHP script file for authorization data and access control filters for RBAC
 //	- Allows a book to have a maximum of 3 authors and categories each
 //	- Caching is enabled
-//
-// Version 3('Use-Yii-RBAC'):
+// Version 3('Use-Yii-RBAC' branch):
 //	- Uses Yii's RBAC for access control
 //	- Allows the books catalog to be searched based on title or author
-//  - Doesn't use the role table. It's there only to make the database backwards compatible
+//  - Doesn't use the role table
+//		- It's there only to make the database backwards compatible
 //
 // Each version has a different database schema
 //	- This migration needs to be used when you are coming down from Version 2 of the app
-//		To run this migration, type: yiic migrate down at the command prompt to bring the database to be in sync with Version 1 of the app provided
+//		To run this migration, type: yiic migrate down at the command prompt to make the database in sync with Version 1 of the app, provided
 //			1. You have currently checked out Version 1 of the app
 //  		2. Your database schema belongs to Version 2 of the app
 //
