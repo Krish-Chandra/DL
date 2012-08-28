@@ -5,20 +5,21 @@
 // Version 1(master branch):
 //	- Uses PHP script file for authorization data and access control filters for RBAC
 //	- Allows a book to have only one author and category each.
-//	- No support for caching
+//	- Doesn't support caching
 // Version 2('Caching-and-Many-Many-relations' branch):
 //	- Uses PHP script file for authorization data and access control filters for RBAC
 //	- Allows a book to have a maximum of 3 authors and categories each
 //	- Caching is enabled
-// Version 3('Use-Yii-RBAC'):
+// Version 3('Use-Yii-RBAC' branch):
 //	- Uses Yii's RBAC for access control
 //	- Allows the books catalog to be searched based on title or author
-//  - Doesn't use the role table. It's there only to make the database backwards compatible
+//  - Doesn't use the role table
+//		- It's there only to make the database backwards compatible
 //
 // Each version has a different database schema
 // This version of (Version 2) of the app has 2 migration files
-//	- This one needs to be used when you are migrating up from Version 1 (master branch)
-// 		- To use this migration: Type yiic migrate up 1 at the command prompt to make the DB schema in sync with this version, provided:
+//	- This migration needs to be used when you are moving up from Version 1 (master branch)
+// 		- To run this migration: type yiic migrate up 1 at the command prompt to make the DB schema in sync with this version, provided:
 //			1. You have checked out Version 2 ('Caching-and-Many-Many-relations') of the app
 //			2. Your DB schema belongs to Vesion 1 (master)
 // 
