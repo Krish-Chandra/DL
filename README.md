@@ -2,6 +2,7 @@ New Features in this branch:
 - Extends the 'Cacing-and-Many-Many-relations' version of the app with the following:
 	- Use of YII's db-based RBAC for authorization(srbac extension is used to implement this feature)
 	- Search the books catalog by author or title
+	
 ####Instructions to switch to this branch:
 	- Follow the installation instructions mentioned in the README doc of master branch to install the app
 	- cd DL
