@@ -1,6 +1,6 @@
 The MIT License
 
-Copyright (c) 2012 Krish Chandra [krishchan01 at hotmail dot com]
+Copyright (c) 2012 Krish Chandrasekaran [krishchan01 at hotmail dot com]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
